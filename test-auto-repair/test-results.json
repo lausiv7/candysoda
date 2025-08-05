@@ -1,0 +1,545 @@
+{
+  "config": {
+    "configFile": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/playwright.config.js",
+    "rootDir": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "line",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 1,
+    "webServer": {
+      "command": "echo \"Docker 컨테이너 확인 중...\" && docker ps | grep windwalker-ide",
+      "port": 8080,
+      "timeout": 10000,
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "windwalker-phase1.spec.js",
+      "file": "windwalker-phase1.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "WindWalker Phase 1 Extension Tests",
+          "file": "windwalker-phase1.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "VS Code Extension Host가 로드되는지 확인",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 16785,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:122:30",
+                        "location": {
+                          "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                          "column": 30,
+                          "line": 122
+                        },
+                        "snippet": "  120 |     );\n  121 |     \n> 122 |     expect(hasActivationLog).toBeTruthy();\n      |                              ^\n  123 |   });\n  124 |\n  125 |   test('WindWalker 사이드바 아이콘이 표시되는지 확인', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                            "column": 30,
+                            "line": 122
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  120 |     );\n  121 |     \n> 122 |     expect(hasActivationLog).toBeTruthy();\n      |                              ^\n  123 |   });\n  124 |\n  125 |   test('WindWalker 사이드바 아이콘이 표시되는지 확인', async ({ page }) => {\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:122:30"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Workspace Trust 처리 시작...\n"
+                        },
+                        {
+                          "text": "Trust 관련 요소 발견: .notification-toast\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-02T13:22:32.471Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-a3ebe-de-Extension-Host가-로드되는지-확인-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-a3ebe-de-Extension-Host가-로드되는지-확인-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-a3ebe-de-Extension-Host가-로드되는지-확인-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                        "column": 30,
+                        "line": 122
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e4aaee44d4adf75030a2-57f47c4b17f3b13f2bc7",
+              "file": "windwalker-phase1.spec.js",
+              "line": 95,
+              "column": 3
+            },
+            {
+              "title": "WindWalker 사이드바 아이콘이 표시되는지 확인",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11820,
+                      "error": {
+                        "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]') resolved to 6 elements:\n    1) <a aria-label=\"WindWalker\" class=\"action-label codicon codicon-terminal\"></a> aka getByRole('tab', { name: 'WindWalker' }).locator('a')\n    2) <div class=\"badge\" aria-hidden=\"true\" aria-label=\"WindWalker\">…</div> aka getByLabel('WindWalker', { exact: true }).nth(1)\n    3) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"13\" class=\"monaco-list list_id_4 mouse-support selection-none\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification\">…</div> aka getByRole('list', { name: 'Info: WindWalker is now' })\n    4) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_4_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: WindWalker is now' })\n    5) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"12\" class=\"monaco-list list_id_3 mouse-support selection-none\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification\">…</div> aka getByRole('list', { name: 'Info: 🚀 WindWalker Phase 1' })\n    6) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_3_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: 🚀 WindWalker Phase 1' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]')\u001b[22m\n",
+                        "stack": "Error: expect.toBeVisible: Error: strict mode violation: locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]') resolved to 6 elements:\n    1) <a aria-label=\"WindWalker\" class=\"action-label codicon codicon-terminal\"></a> aka getByRole('tab', { name: 'WindWalker' }).locator('a')\n    2) <div class=\"badge\" aria-hidden=\"true\" aria-label=\"WindWalker\">…</div> aka getByLabel('WindWalker', { exact: true }).nth(1)\n    3) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"13\" class=\"monaco-list list_id_4 mouse-support selection-none\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification\">…</div> aka getByRole('list', { name: 'Info: WindWalker is now' })\n    4) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_4_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: WindWalker is now' })\n    5) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"12\" class=\"monaco-list list_id_3 mouse-support selection-none\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification\">…</div> aka getByRole('list', { name: 'Info: 🚀 WindWalker Phase 1' })\n    6) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_3_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: 🚀 WindWalker Phase 1' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]')\u001b[22m\n\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:158:34",
+                        "location": {
+                          "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                          "column": 34,
+                          "line": 158
+                        },
+                        "snippet": "  156 |     \n  157 |     // 아이콘이 존재하는지 확인 (최대 10초 대기)\n> 158 |     await expect(windwalkerIcon).toBeVisible({ timeout: 10000 });\n      |                                  ^\n  159 |   });\n  160 |\n  161 |   test('WindWalker 패널 클릭 시 Welcome 뷰가 표시되는지 확인', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                            "column": 34,
+                            "line": 158
+                          },
+                          "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]') resolved to 6 elements:\n    1) <a aria-label=\"WindWalker\" class=\"action-label codicon codicon-terminal\"></a> aka getByRole('tab', { name: 'WindWalker' }).locator('a')\n    2) <div class=\"badge\" aria-hidden=\"true\" aria-label=\"WindWalker\">…</div> aka getByLabel('WindWalker', { exact: true }).nth(1)\n    3) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"13\" class=\"monaco-list list_id_4 mouse-support selection-none\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification\">…</div> aka getByRole('list', { name: 'Info: WindWalker is now' })\n    4) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_4_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: WindWalker is now' })\n    5) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"12\" class=\"monaco-list list_id_3 mouse-support selection-none\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification\">…</div> aka getByRole('list', { name: 'Info: 🚀 WindWalker Phase 1' })\n    6) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_3_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: 🚀 WindWalker Phase 1' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]')\u001b[22m\n\n\n  156 |     \n  157 |     // 아이콘이 존재하는지 확인 (최대 10초 대기)\n> 158 |     await expect(windwalkerIcon).toBeVisible({ timeout: 10000 });\n      |                                  ^\n  159 |   });\n  160 |\n  161 |   test('WindWalker 패널 클릭 시 Welcome 뷰가 표시되는지 확인', async ({ page }) => {\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:158:34"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Workspace Trust 처리 시작...\n"
+                        },
+                        {
+                          "text": "Trust 관련 요소 발견: .notification-toast\n"
+                        },
+                        {
+                          "text": "WindWalker 아이콘을 찾을 수 없습니다: locator.isVisible: Error: strict mode violation: locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]') resolved to 6 elements:\n    1) <a aria-label=\"WindWalker\" class=\"action-label codicon codicon-terminal\"></a> aka getByRole('tab', { name: 'WindWalker' }).locator('a')\n    2) <div class=\"badge\" aria-hidden=\"true\" aria-label=\"WindWalker\">…</div> aka getByLabel('WindWalker', { exact: true }).nth(1)\n    3) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"13\" class=\"monaco-list list_id_4 mouse-support selection-none\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification\">…</div> aka getByRole('list', { name: 'Info: WindWalker is now' })\n    4) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_4_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: WindWalker is now' })\n    5) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"12\" class=\"monaco-list list_id_3 mouse-support selection-none\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification\">…</div> aka getByRole('list', { name: 'Info: 🚀 WindWalker Phase 1' })\n    6) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_3_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: 🚀 WindWalker Phase 1' })\n\nCall log:\n\u001b[2m    - checking visibility of locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]')\u001b[22m\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-02T13:23:06.190Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-7d4db-ndWalker-사이드바-아이콘이-표시되는지-확인-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-7d4db-ndWalker-사이드바-아이콘이-표시되는지-확인-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-7d4db-ndWalker-사이드바-아이콘이-표시되는지-확인-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                        "column": 34,
+                        "line": 158
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e4aaee44d4adf75030a2-11b6b967e1fcc86448a7",
+              "file": "windwalker-phase1.spec.js",
+              "line": 125,
+              "column": 3
+            },
+            {
+              "title": "WindWalker 패널 클릭 시 Welcome 뷰가 표시되는지 확인",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11634,
+                      "error": {
+                        "message": "Error: locator.click: Error: strict mode violation: locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]') resolved to 6 elements:\n    1) <a aria-label=\"WindWalker\" class=\"action-label codicon codicon-terminal\"></a> aka getByRole('tab', { name: 'WindWalker' }).locator('a')\n    2) <div class=\"badge\" aria-hidden=\"true\" aria-label=\"WindWalker\">…</div> aka getByLabel('WindWalker', { exact: true }).nth(1)\n    3) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"13\" class=\"monaco-list list_id_4 mouse-support selection-none\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification\">…</div> aka getByRole('list', { name: 'Info: WindWalker is now' })\n    4) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_4_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: WindWalker is now' })\n    5) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"12\" class=\"monaco-list list_id_3 mouse-support selection-none\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification\">…</div> aka getByRole('list', { name: 'Info: 🚀 WindWalker Phase 1' })\n    6) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_3_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: 🚀 WindWalker Phase 1' })\n\nCall log:\n\u001b[2m  - waiting for locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]')\u001b[22m\n",
+                        "stack": "Error: locator.click: Error: strict mode violation: locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]') resolved to 6 elements:\n    1) <a aria-label=\"WindWalker\" class=\"action-label codicon codicon-terminal\"></a> aka getByRole('tab', { name: 'WindWalker' }).locator('a')\n    2) <div class=\"badge\" aria-hidden=\"true\" aria-label=\"WindWalker\">…</div> aka getByLabel('WindWalker', { exact: true }).nth(1)\n    3) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"13\" class=\"monaco-list list_id_4 mouse-support selection-none\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification\">…</div> aka getByRole('list', { name: 'Info: WindWalker is now' })\n    4) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_4_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: WindWalker is now' })\n    5) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"12\" class=\"monaco-list list_id_3 mouse-support selection-none\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification\">…</div> aka getByRole('list', { name: 'Info: 🚀 WindWalker Phase 1' })\n    6) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_3_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: 🚀 WindWalker Phase 1' })\n\nCall log:\n\u001b[2m  - waiting for locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]')\u001b[22m\n\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:164:26",
+                        "location": {
+                          "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                          "column": 26,
+                          "line": 164
+                        },
+                        "snippet": "  162 |     // WindWalker 아이콘 클릭\n  163 |     const windwalkerIcon = page.locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]');\n> 164 |     await windwalkerIcon.click();\n      |                          ^\n  165 |     \n  166 |     // Welcome 뷰가 사이드바에 표시되는지 확인\n  167 |     const welcomeView = page.locator('[id*=\"windwalker.welcome\"], .view-header [title*=\"Welcome\"]');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                            "column": 26,
+                            "line": 164
+                          },
+                          "message": "Error: locator.click: Error: strict mode violation: locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]') resolved to 6 elements:\n    1) <a aria-label=\"WindWalker\" class=\"action-label codicon codicon-terminal\"></a> aka getByRole('tab', { name: 'WindWalker' }).locator('a')\n    2) <div class=\"badge\" aria-hidden=\"true\" aria-label=\"WindWalker\">…</div> aka getByLabel('WindWalker', { exact: true }).nth(1)\n    3) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"13\" class=\"monaco-list list_id_4 mouse-support selection-none\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification\">…</div> aka getByRole('list', { name: 'Info: WindWalker is now' })\n    4) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_4_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: WindWalker is now active!, source: WindWalker IDE, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: WindWalker is now' })\n    5) <div role=\"list\" tabindex=\"0\" aria-multiselectable=\"true\" data-keybinding-context=\"12\" class=\"monaco-list list_id_3 mouse-support selection-none\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification\">…</div> aka getByRole('list', { name: 'Info: 🚀 WindWalker Phase 1' })\n    6) <div role=\"dialog\" data-index=\"0\" aria-setsize=\"1\" id=\"list_id_3_0\" aria-posinset=\"1\" draggable=\"false\" data-parity=\"even\" aria-selected=\"false\" class=\"monaco-list-row\" data-last-element=\"true\" aria-label=\"Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification, Inspect the response in the accessible view with Alt+F2\">…</div> aka getByRole('dialog', { name: 'Info: 🚀 WindWalker Phase 1' })\n\nCall log:\n\u001b[2m  - waiting for locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]')\u001b[22m\n\n\n  162 |     // WindWalker 아이콘 클릭\n  163 |     const windwalkerIcon = page.locator('[title*=\"WindWalker\"], [aria-label*=\"WindWalker\"]');\n> 164 |     await windwalkerIcon.click();\n      |                          ^\n  165 |     \n  166 |     // Welcome 뷰가 사이드바에 표시되는지 확인\n  167 |     const welcomeView = page.locator('[id*=\"windwalker.welcome\"], .view-header [title*=\"Welcome\"]');\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:164:26"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Workspace Trust 처리 시작...\n"
+                        },
+                        {
+                          "text": "Trust 관련 요소 발견: .notification-toast\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-02T13:23:33.863Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-d2234-패널-클릭-시-Welcome-뷰가-표시되는지-확인-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-d2234-패널-클릭-시-Welcome-뷰가-표시되는지-확인-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-d2234-패널-클릭-시-Welcome-뷰가-표시되는지-확인-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                        "column": 26,
+                        "line": 164
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e4aaee44d4adf75030a2-2c1bd2506dd556bb886a",
+              "file": "windwalker-phase1.spec.js",
+              "line": 161,
+              "column": 3
+            },
+            {
+              "title": "WindWalker Hello World 명령어 실행 테스트",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17349,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.notifications-list-container .notification-toast')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.notifications-list-container .notification-toast')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.notifications-list-container .notification-toast')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.notifications-list-container .notification-toast')\u001b[22m\n\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:187:32",
+                        "location": {
+                          "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                          "column": 32,
+                          "line": 187
+                        },
+                        "snippet": "  185 |     // 정보 메시지가 표시되는지 확인\n  186 |     const notification = page.locator('.notifications-list-container .notification-toast');\n> 187 |     await expect(notification).toBeVisible({ timeout: 5000 });\n      |                                ^\n  188 |     \n  189 |     // 메시지 내용 확인\n  190 |     const notificationText = await notification.textContent();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                            "column": 32,
+                            "line": 187
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.notifications-list-container .notification-toast')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.notifications-list-container .notification-toast')\u001b[22m\n\n\n  185 |     // 정보 메시지가 표시되는지 확인\n  186 |     const notification = page.locator('.notifications-list-container .notification-toast');\n> 187 |     await expect(notification).toBeVisible({ timeout: 5000 });\n      |                                ^\n  188 |     \n  189 |     // 메시지 내용 확인\n  190 |     const notificationText = await notification.textContent();\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:187:32"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Workspace Trust 처리 시작...\n"
+                        },
+                        {
+                          "text": "Trust 관련 요소 발견: .notification-toast\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-02T13:24:02.028Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-89b7d-lker-Hello-World-명령어-실행-테스트-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-89b7d-lker-Hello-World-명령어-실행-테스트-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-89b7d-lker-Hello-World-명령어-실행-테스트-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                        "column": 32,
+                        "line": 187
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e4aaee44d4adf75030a2-00330bc48737174e9b0e",
+              "file": "windwalker-phase1.spec.js",
+              "line": 171,
+              "column": 3
+            },
+            {
+              "title": "Extension Host 프로세스 상태 확인",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17062,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Workspace Trust 처리 시작...\n"
+                        },
+                        {
+                          "text": "Trust 관련 요소 발견: .notification-toast\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-02T13:24:35.737Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e4aaee44d4adf75030a2-8d2dc7202203d369cf90",
+              "file": "windwalker-phase1.spec.js",
+              "line": 194,
+              "column": 3
+            },
+            {
+              "title": "VS Code 워크스페이스가 올바르게 로드되는지 확인",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 21423,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 10000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.explorer-item[title*=\"studio\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.explorer-item[title*=\"studio\"]')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 10000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.explorer-item[title*=\"studio\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.explorer-item[title*=\"studio\"]')\u001b[22m\n\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:227:35",
+                        "location": {
+                          "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                          "column": 35,
+                          "line": 227
+                        },
+                        "snippet": "  225 |     // 워크스페이스가 로드되었는지 확인\n  226 |     const workspaceFolder = page.locator('.explorer-item[title*=\"studio\"]');\n> 227 |     await expect(workspaceFolder).toBeVisible({ timeout: 10000 });\n      |                                   ^\n  228 |   });\n  229 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                            "column": 35,
+                            "line": 227
+                          },
+                          "message": "Error: \u001b[31mTimed out 10000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.explorer-item[title*=\"studio\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.explorer-item[title*=\"studio\"]')\u001b[22m\n\n\n  225 |     // 워크스페이스가 로드되었는지 확인\n  226 |     const workspaceFolder = page.locator('.explorer-item[title*=\"studio\"]');\n> 227 |     await expect(workspaceFolder).toBeVisible({ timeout: 10000 });\n      |                                   ^\n  228 |   });\n  229 | });\n    at /mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js:227:35"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Workspace Trust 처리 시작...\n"
+                        },
+                        {
+                          "text": "Trust 관련 요소 발견: .notification-toast\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-02T13:24:53.186Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-ca556--Code-워크스페이스가-올바르게-로드되는지-확인-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-ca556--Code-워크스페이스가-올바르게-로드되는지-확인-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/test-results/windwalker-phase1-WindWalk-ca556--Code-워크스페이스가-올바르게-로드되는지-확인-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/mnt/d/git/2025/windwalker/windw/test-auto-repair/tests/windwalker-phase1.spec.js",
+                        "column": 35,
+                        "line": 227
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e4aaee44d4adf75030a2-951a3f36ea9621482a1b",
+              "file": "windwalker-phase1.spec.js",
+              "line": 221,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-02T13:22:18.497Z",
+    "duration": 169191.956,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

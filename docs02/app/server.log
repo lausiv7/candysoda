@@ -1,0 +1,10 @@
+127.0.0.1 - - [06/Aug/2025 04:50:09] "HEAD / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 04:50:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 04:50:54] "GET /src/js/puzzle/PuzzleManager.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 04:50:54] "GET /src/js/puzzle/GameBoard.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 04:50:54] "GET /src/js/puzzle/MatchDetector.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 04:50:54] "GET /src/js/puzzle/MoveValidator.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 04:50:54] "GET /src/js/puzzle/Block.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 04:50:54] "GET /src/js/puzzle/GravitySystem.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2025 04:50:54] code 404, message File not found
+127.0.0.1 - - [06/Aug/2025 04:50:54] "GET /favicon.ico HTTP/1.1" 404 -

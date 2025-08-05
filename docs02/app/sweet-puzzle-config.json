@@ -1,0 +1,52 @@
+{
+  "project": {
+    "name": "sweet-puzzle",
+    "version": "phase-1",
+    "description": "Sweet Puzzle 캔디소다 03 Phase 1 테스트 설정"
+  },
+  "server": {
+    "port": 8081,
+    "host": "localhost",
+    "command": "python3 -m http.server 8081",
+    "healthCheckPath": "/",
+    "startupTimeout": 30000
+  },
+  "testing": {
+    "framework": "playwright",
+    "browsers": ["chromium", "firefox"],
+    "timeout": 60000,
+    "retries": 2,
+    "testDir": "./tests",
+    "outputDir": "./test-results"
+  },
+  "repair": {
+    "maxAttempts": 3,
+    "autoRepairEnabled": true,
+    "repairStrategies": [
+      "timeout_increase",
+      "selector_update", 
+      "null_check_addition",
+      "server_restart"
+    ]
+  },
+  "screenshots": {
+    "enabled": true,
+    "onFailure": true,
+    "quality": 80,
+    "fullPage": true
+  },
+  "reporting": {
+    "formats": ["html", "json"],
+    "dashboard": true,
+    "history": true
+  },
+  "gameSpecific": {
+    "gameStateCheck": "window.game && window.game.gameState === 'player_turn'",
+    "boardSelector": "#game-board",
+    "blockSelector": ".candy",
+    "scoreSelector": "#score",
+    "movesSelector": "#moves",
+    "expectedBlocks": 64,
+    "initialScore": 0
+  }
+}

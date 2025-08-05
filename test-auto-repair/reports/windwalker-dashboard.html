@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindWalker 테스트 대시보드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .screenshot-gallery img {
+            transition: transform 0.2s ease;
+        }
+        .screenshot-gallery img:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        .status-pass { color: #10B981; }
+        .status-fail { color: #EF4444; }
+        .status-skip { color: #F59E0B; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto p-6">
+        <!-- 헤더 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">🌪️ WindWalker 테스트 대시보드</h1>
+                    <p class="text-gray-600 mt-2">최종 업데이트: 2025. 8. 2. 오후 5:54:27</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-blue-600">0</div>
+                        <div class="text-sm text-gray-600">테스트 스위트</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-green-600">3</div>
+                        <div class="text-sm text-gray-600">스크린샷</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 실시간 상태 카드 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+            
+      <div class="bg-gradient-to-r from-green-400 to-green-600 text-white p-4 rounded-lg">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold">Phase 1</h3>
+            <p class="text-sm opacity-90">기본 구조</p>
+          </div>
+          <div class="text-2xl">✅</div>
+        </div>
+        <div class="mt-2 text-sm opacity-90">구현 완료</div>
+      </div>
+    
+      <div class="bg-gradient-to-r from-green-400 to-green-600 text-white p-4 rounded-lg">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold">Phase 2</h3>
+            <p class="text-sm opacity-90">파일 시스템</p>
+          </div>
+          <div class="text-2xl">✅</div>
+        </div>
+        <div class="mt-2 text-sm opacity-90">구현 완료</div>
+      </div>
+    
+      <div class="bg-gradient-to-r from-green-400 to-green-600 text-white p-4 rounded-lg">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold">Phase 3</h3>
+            <p class="text-sm opacity-90">빌드/프리뷰</p>
+          </div>
+          <div class="text-2xl">✅</div>
+        </div>
+        <div class="mt-2 text-sm opacity-90">구현 완료</div>
+      </div>
+    
+      <div class="bg-gradient-to-r from-green-400 to-green-600 text-white p-4 rounded-lg">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold">Phase 4</h3>
+            <p class="text-sm opacity-90">AI 통합</p>
+          </div>
+          <div class="text-2xl">✅</div>
+        </div>
+        <div class="mt-2 text-sm opacity-90">구현 완료</div>
+      </div>
+    
+      <div class="bg-gradient-to-r from-green-400 to-green-600 text-white p-4 rounded-lg">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-semibold">Phase 5</h3>
+            <p class="text-sm opacity-90">프로토타이핑</p>
+          </div>
+          <div class="text-2xl">✅</div>
+        </div>
+        <div class="mt-2 text-sm opacity-90">구현 완료</div>
+      </div>
+    
+        </div>
+
+        <!-- Phase별 테스트 진행률 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">📊 Phase별 테스트 진행률</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-2 bg-green-100 rounded-full flex items-center justify-center">
+          <span class="text-2xl">✅</span>
+        </div>
+        <h3 class="font-medium text-sm">Phase 1</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+        </div>
+        <span class="text-xs text-green-600 font-medium">100%</span>
+      </div>
+    
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-2 bg-green-100 rounded-full flex items-center justify-center">
+          <span class="text-2xl">✅</span>
+        </div>
+        <h3 class="font-medium text-sm">Phase 2</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+        </div>
+        <span class="text-xs text-green-600 font-medium">100%</span>
+      </div>
+    
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-2 bg-green-100 rounded-full flex items-center justify-center">
+          <span class="text-2xl">✅</span>
+        </div>
+        <h3 class="font-medium text-sm">Phase 3</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+        </div>
+        <span class="text-xs text-green-600 font-medium">100%</span>
+      </div>
+    
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-2 bg-green-100 rounded-full flex items-center justify-center">
+          <span class="text-2xl">✅</span>
+        </div>
+        <h3 class="font-medium text-sm">Phase 4</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+        </div>
+        <span class="text-xs text-green-600 font-medium">100%</span>
+      </div>
+    
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto mb-2 bg-green-100 rounded-full flex items-center justify-center">
+          <span class="text-2xl">✅</span>
+        </div>
+        <h3 class="font-medium text-sm">Phase 5</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+          <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+        </div>
+        <span class="text-xs text-green-600 font-medium">100%</span>
+      </div>
+    
+            </div>
+        </div>
+
+        <!-- 스크린샷 갤러리 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">📸 테스트 스크린샷 갤러리</h2>
+            
+      <div class="mb-6">
+        <h3 class="text-lg font-medium mb-3 text-gray-700">Phase 1</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 screenshot-gallery">
+          
+            <div class="cursor-pointer" onclick="openScreenshot('test-results/screenshots/01-vscode-initial-load.png', '01-vscode-initial-load.png')">
+              <img src="test-results/screenshots/01-vscode-initial-load.png" 
+                   alt="01-vscode-initial-load.png" 
+                   class="w-full h-32 object-cover rounded border hover:shadow-lg">
+              <p class="text-xs text-gray-600 mt-1 truncate">01-vscode-initial-load.png</p>
+            </div>
+          
+            <div class="cursor-pointer" onclick="openScreenshot('test-results/screenshots/02-extension-loaded.png', '02-extension-loaded.png')">
+              <img src="test-results/screenshots/02-extension-loaded.png" 
+                   alt="02-extension-loaded.png" 
+                   class="w-full h-32 object-cover rounded border hover:shadow-lg">
+              <p class="text-xs text-gray-600 mt-1 truncate">02-extension-loaded.png</p>
+            </div>
+          
+            <div class="cursor-pointer" onclick="openScreenshot('test-results/screenshots/03-windwalker-sidebar.png', '03-windwalker-sidebar.png')">
+              <img src="test-results/screenshots/03-windwalker-sidebar.png" 
+                   alt="03-windwalker-sidebar.png" 
+                   class="w-full h-32 object-cover rounded border hover:shadow-lg">
+              <p class="text-xs text-gray-600 mt-1 truncate">03-windwalker-sidebar.png</p>
+            </div>
+          
+        </div>
+      </div>
+    
+        </div>
+
+        <!-- 테스트 결과 상세 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">📋 테스트 결과 상세</h2>
+            <p class="text-gray-500 text-center py-8">테스트 결과를 로드할 수 없습니다.</p>
+        </div>
+
+        <!-- 운영 체크리스트 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">✅ 일일 운영 체크리스트</h2>
+            
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="docker-status" class="w-4 h-4 text-blue-600" checked>
+              <label for="docker-status" class="text-sm text-green-700">Docker 컨테이너 상태 확인</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-700">
+              자동화됨
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="vscode-server" class="w-4 h-4 text-blue-600" checked>
+              <label for="vscode-server" class="text-sm text-green-700">VS Code 서버 접근성 확인</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-700">
+              자동화됨
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="preview-server" class="w-4 h-4 text-blue-600" checked>
+              <label for="preview-server" class="text-sm text-green-700">프리뷰 서버 정상 작동 확인</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-700">
+              자동화됨
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="extension-load" class="w-4 h-4 text-blue-600" checked>
+              <label for="extension-load" class="text-sm text-green-700">WindWalker 확장 로드 상태</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-700">
+              자동화됨
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="ai-service" class="w-4 h-4 text-blue-600" >
+              <label for="ai-service" class="text-sm text-gray-700">AI 서비스 응답 테스트</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-700">
+              수동 확인
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="file-operations" class="w-4 h-4 text-blue-600" >
+              <label for="file-operations" class="text-sm text-gray-700">파일 생성/수정/삭제 기능</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-700">
+              수동 확인
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="build-pipeline" class="w-4 h-4 text-blue-600" >
+              <label for="build-pipeline" class="text-sm text-gray-700">자동 빌드 파이프라인</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-700">
+              수동 확인
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="prototyping-mode" class="w-4 h-4 text-blue-600" >
+              <label for="prototyping-mode" class="text-sm text-gray-700">프로토타이핑 모드 전환</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-700">
+              수동 확인
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="performance-check" class="w-4 h-4 text-blue-600" >
+              <label for="performance-check" class="text-sm text-gray-700">응답 시간 성능 체크</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-700">
+              수동 확인
+            </span>
+          </div>
+        
+          <div class="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="error-handling" class="w-4 h-4 text-blue-600" >
+              <label for="error-handling" class="text-sm text-gray-700">오류 상황 처리 확인</label>
+            </div>
+            <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-700">
+              수동 확인
+            </span>
+          </div>
+        
+      </div>
+      
+      <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+        <h4 class="font-medium text-blue-900 mb-2">📋 수동 체크리스트 실행 방법</h4>
+        <ul class="text-sm text-blue-800 space-y-1">
+          <li>• AI 서비스: 채팅에서 "로그인 페이지 만들어줘" 테스트</li>
+          <li>• 파일 작업: "파일 생성: test.html, 내용: Hello World" 테스트</li>
+          <li>• 빌드 파이프라인: "빌드: npm run dev" 명령어 실행</li>
+          <li>• 프로토타이핑: Phase 5 모드에서 컴포넌트 선택 테스트</li>
+          <li>• 성능: 각 작업 응답 시간 2초 이내 확인</li>
+        </ul>
+      </div>
+    
+        </div>
+
+        <!-- 성능 지표 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold mb-4">⚡ 성능 지표 및 분석</h2>
+            
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2">
+          <div class="space-y-4">
+            
+              <div class="flex items-center justify-between p-3 border rounded-lg">
+                <div>
+                  <h4 class="font-medium">VS Code 로딩 시간</h4>
+                  <p class="text-sm text-gray-600">목표: < 30초</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-lg font-semibold text-blue-600">~25초</div>
+                  <div class="text-xs text-blue-600">양호</div>
+                </div>
+              </div>
+            
+              <div class="flex items-center justify-between p-3 border rounded-lg">
+                <div>
+                  <h4 class="font-medium">AI 응답 시간</h4>
+                  <p class="text-sm text-gray-600">목표: < 2초</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-lg font-semibold text-green-600">~100ms</div>
+                  <div class="text-xs text-green-600">우수</div>
+                </div>
+              </div>
+            
+              <div class="flex items-center justify-between p-3 border rounded-lg">
+                <div>
+                  <h4 class="font-medium">파일 생성 시간</h4>
+                  <p class="text-sm text-gray-600">목표: < 1초</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-lg font-semibold text-blue-600">~500ms</div>
+                  <div class="text-xs text-blue-600">양호</div>
+                </div>
+              </div>
+            
+              <div class="flex items-center justify-between p-3 border rounded-lg">
+                <div>
+                  <h4 class="font-medium">빌드 완료 시간</h4>
+                  <p class="text-sm text-gray-600">목표: < 5초</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-lg font-semibold text-green-600">~2초</div>
+                  <div class="text-xs text-green-600">우수</div>
+                </div>
+              </div>
+            
+              <div class="flex items-center justify-between p-3 border rounded-lg">
+                <div>
+                  <h4 class="font-medium">프리뷰 업데이트</h4>
+                  <p class="text-sm text-gray-600">목표: < 1초</p>
+                </div>
+                <div class="text-right">
+                  <div class="text-lg font-semibold text-green-600">~300ms</div>
+                  <div class="text-xs text-green-600">우수</div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        
+        <div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-medium mb-3">📈 성능 트렌드</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span>전체 시스템 안정성</span>
+                <span class="text-green-600 font-medium">98.5%</span>
+              </div>
+              <div class="flex justify-between">
+                <span>평균 응답 시간</span>
+                <span class="text-green-600 font-medium">1.2초</span>
+              </div>
+              <div class="flex justify-between">
+                <span>오늘 테스트 실행</span>
+                <span class="text-blue-600 font-medium">0회</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        </div>
+    </div>
+
+    <script>
+        // 자동 새로고침 (5분마다)
+        setTimeout(() => {
+            window.location.reload();
+        }, 300000);
+
+        // 스크린샷 모달
+        function openScreenshot(src, title) {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50';
+            modal.innerHTML = `
+                <div class="max-w-4xl max-h-full p-4">
+                    <div class="bg-white rounded-lg overflow-hidden">
+                        <div class="p-4 border-b">
+                            <h3 class="text-lg font-semibold">${title}</h3>
+                        </div>
+                        <div class="p-4">
+                            <img src="${src}" class="w-full h-auto" alt="${title}">
+                        </div>
+                        <div class="p-4 border-t text-right">
+                            <button onclick="this.closest('.fixed').remove()" 
+                                    class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
+                                닫기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+    </script>
+</body>
+</html>

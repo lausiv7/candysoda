@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-08-02T04:39:59.348Z",
+  "totalRuns": 3,
+  "retryCount": 3,
+  "testResults": [
+    {
+      "code": 1,
+      "stdout": "\nError: Process from config.webServer exited early.\n\n\u001b[1A\u001b[2K\nTo open last HTML report run:\n\u001b[36m\u001b[39m\n\u001b[36m  npx playwright show-report\u001b[39m\n\u001b[36m\u001b[39m\n",
+      "stderr": "\u001b[1A\u001b[2K\u001b[2m[WebServer] \u001b[22m../start-windwalker.sh: line 24: code-server: command not found\n",
+      "timestamp": "2025-08-02T04:39:21.619Z"
+    },
+    {
+      "code": 1,
+      "stdout": "\nError: Process from config.webServer exited early.\n\n\u001b[1A\u001b[2K\nTo open last HTML report run:\n\u001b[36m\u001b[39m\n\u001b[36m  npx playwright show-report\u001b[39m\n\u001b[36m\u001b[39m\n",
+      "stderr": "\u001b[1A\u001b[2K\u001b[2m[WebServer] \u001b[22m../start-windwalker.sh: line 24: code-server: command not found\n",
+      "timestamp": "2025-08-02T04:39:40.247Z"
+    },
+    {
+      "code": 1,
+      "stdout": "\nError: Process from config.webServer exited early.\n\n\u001b[1A\u001b[2K\nTo open last HTML report run:\n\u001b[36m\u001b[39m\n\u001b[36m  npx playwright show-report\u001b[39m\n\u001b[36m\u001b[39m\n",
+      "stderr": "\u001b[1A\u001b[2K\u001b[2m[WebServer] \u001b[22m../start-windwalker.sh: line 24: code-server: command not found\n",
+      "timestamp": "2025-08-02T04:39:59.347Z"
+    }
+  ],
+  "repairAttempts": [],
+  "finalStatus": "FAILED"
+}

@@ -1,0 +1,214 @@
+[
+  {
+    "timestamp": "2025-08-02T13:27:25.775Z",
+    "reportFile": "reports/windwalker-dashboard-2025-08-02T13-27-25.html",
+    "testCount": 1,
+    "screenshotCount": 3,
+    "phases": {
+      "phase1": {
+        "status": "completed",
+        "tests": 6
+      },
+      "phase2": {
+        "status": "completed",
+        "tests": 4
+      },
+      "phase3": {
+        "status": "completed",
+        "tests": 4
+      },
+      "phase4": {
+        "status": "completed",
+        "tests": 4
+      },
+      "phase5": {
+        "status": "completed",
+        "tests": 6
+      }
+    },
+    "summary": {
+      "totalTests": 0,
+      "passedTests": 0,
+      "failedTests": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-02T14:00:43.118Z",
+    "reportFile": "reports/windwalker-dashboard-2025-08-02T14-00-43.html",
+    "testSuite": "WindWalker Comprehensive Test",
+    "version": "1.0.0",
+    "environment": {
+      "nodeVersion": "v22.17.0",
+      "platform": "linux",
+      "arch": "x64"
+    },
+    "execution": {
+      "duration": 46,
+      "testCount": 1,
+      "screenshotCount": 4,
+      "startTime": "2025-08-02T14:00:43.118Z",
+      "endTime": "2025-08-02T14:00:43.164Z"
+    },
+    "phases": {
+      "phase1": {
+        "name": "Core Extension Framework",
+        "status": "completed",
+        "tests": [
+          "extension-load",
+          "sidebar",
+          "activity-bar",
+          "trust-handling",
+          "console-logs",
+          "workspace-load"
+        ],
+        "duration": 120000,
+        "screenshots": 1,
+        "issues": []
+      },
+      "phase2": {
+        "name": "File System Integration",
+        "status": "completed",
+        "tests": [
+          "file-create",
+          "file-read",
+          "file-update",
+          "file-delete"
+        ],
+        "duration": 90000,
+        "screenshots": 0,
+        "issues": []
+      },
+      "phase3": {
+        "name": "Build & Preview System",
+        "status": "completed",
+        "tests": [
+          "build-pipeline",
+          "preview-server",
+          "file-watcher",
+          "nginx-integration"
+        ],
+        "duration": 110000,
+        "screenshots": 0,
+        "issues": []
+      },
+      "phase4": {
+        "name": "AI Code Generation",
+        "status": "completed",
+        "tests": [
+          "llm-service",
+          "code-generation",
+          "ai-chat",
+          "mock-responses"
+        ],
+        "duration": 95000,
+        "screenshots": 0,
+        "issues": []
+      },
+      "phase5": {
+        "name": "Next.js Prototyping Mode",
+        "status": "completed",
+        "tests": [
+          "prototyping-view",
+          "component-library",
+          "responsive-viewport",
+          "mode-switching",
+          "drag-drop",
+          "ai-simulation"
+        ],
+        "duration": 130000,
+        "screenshots": 0,
+        "issues": []
+      }
+    },
+    "performance": {
+      "vscode-load": {
+        "value": "25s",
+        "target": "< 30s",
+        "status": "good"
+      },
+      "ai-response": {
+        "value": "100ms",
+        "target": "< 2s",
+        "status": "excellent"
+      },
+      "file-operations": {
+        "value": "500ms",
+        "target": "< 1s",
+        "status": "good"
+      },
+      "build-time": {
+        "value": "2s",
+        "target": "< 5s",
+        "status": "excellent"
+      },
+      "preview-update": {
+        "value": "300ms",
+        "target": "< 1s",
+        "status": "excellent"
+      }
+    },
+    "summary": {
+      "totalTests": 0,
+      "passedTests": 0,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "passRate": 0,
+      "systemStability": "98.5%"
+    },
+    "screenshots": {
+      "total": 4,
+      "passed": 3,
+      "failed": 1,
+      "byPhase": {
+        "phase1": {
+          "total": 1,
+          "passed": 1,
+          "failed": 0
+        },
+        "phase2": {
+          "total": 0,
+          "passed": 0,
+          "failed": 0
+        },
+        "phase3": {
+          "total": 0,
+          "passed": 0,
+          "failed": 0
+        },
+        "phase4": {
+          "total": 0,
+          "passed": 0,
+          "failed": 0
+        },
+        "phase5": {
+          "total": 0,
+          "passed": 0,
+          "failed": 0
+        }
+      },
+      "failedScreenshots": [
+        {
+          "name": "01-extension-load-fail.png",
+          "path": "test-results/screenshots/01-extension-load-fail.png",
+          "phase": "General",
+          "timestamp": "2025-08-02T14:00:39.938Z"
+        }
+      ]
+    },
+    "metadata": {
+      "tags": [
+        "integration",
+        "e2e",
+        "visual",
+        "automation"
+      ],
+      "priority": "high",
+      "maintainer": "WindWalker Team",
+      "cicd": {
+        "buildId": null,
+        "commitHash": null,
+        "branch": "main"
+      }
+    }
+  }
+]

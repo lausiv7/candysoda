@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- application:
+  - toolbar:
+    - button "Go Back (Alt+LeftArrow)" [disabled]: 
+    - button "Go Forward (Alt+RightArrow)" [disabled]: 
+    - toolbar:
+      - button "workspace"
+  - toolbar "Title actions":
+    - button "Customize Layout...": 
+    - checkbox "Toggle Primary Side Bar (Ctrl+B)" [checked]: 
+    - checkbox "Toggle Panel (Ctrl+J)": 
+    - checkbox "Toggle Secondary Side Bar (Ctrl+Alt+B)": 
+  - menubar:
+    - menuitem "Application Menu"
+  - tablist "Active View Switcher":
+    - tab "Explorer (Ctrl+Shift+E)" [expanded] [selected]: 
+    - tab "Search (Ctrl+Shift+F)": 
+    - tab "Source Control (Ctrl+Shift+G)": 
+    - tab "Run and Debug (Ctrl+Shift+D)": 
+    - tab "Extensions (Ctrl+Shift+X)": 
+    - tab "WindWalker": 
+  - toolbar "Manage":
+    - button "Accounts": 
+    - button "Manage": 
+  - heading "Explorer" [level=2]
+  - toolbar "Explorer actions": 
+  - toolbar
+  - 'button "Explorer Section: workspace" [expanded]':
+    - text: 
+    - 'heading "Explorer Section: workspace" [level=3]': workspace
+  - tree "Files Explorer":
+    - treeitem "dist" [level=1]:  dist
+    - treeitem "templates" [level=1]:  templates
+    - treeitem "index.html" [level=1]:  index.html
+    - treeitem "phase5-prototype.html" [level=1]:  phase5-prototype.html
+  - button "Outline Section":
+    - text: 
+    - heading "Outline" [level=3]
+  - button "Timeline Section":
+    - text: 
+    - heading "Timeline" [level=3]
+  - main
+  - status:
+    - button "remote": 
+    - button "No Problems":  0  0
+    - button "No Ports Forwarded":  0
+    - button "Notifications": 
+    - 'button "Layout: US"'
+  - alert: "Info: WindWalker is now active!"
+  - alert
+  - 'list "Info: WindWalker is now active!, source: WindWalker IDE, notification"':
+    - 'dialog "Info: WindWalker is now active!, source: WindWalker IDE, notification, Inspect the response in the accessible view with Alt+F2"':  WindWalker is now active!
+  - 'list "Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification"':
+    - 'dialog "Info: 🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!, source: WindWalker Phase 1, notification, Inspect the response in the accessible view with Alt+F2"':  🚀 WindWalker Phase 1 확장이 성공적으로 로드되었습니다!
+  - 'list "Info: [code-server v4.102.3](https://github.com/cdr/code-server/releases/tag/v4.102.3) has been released!, notification"':
+    - 'dialog "Info: [code-server v4.102.3](https://github.com/cdr/code-server/releases/tag/v4.102.3) has been released!, notification, Inspect the response in the accessible view with Alt+F2"':
+      - text: 
+      - link "code-server v4.102.3":
+        - /url: https://github.com/cdr/code-server/releases/tag/v4.102.3
+      - text: has been released!
+```
