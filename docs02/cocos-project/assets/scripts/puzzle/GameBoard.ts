@@ -1,0 +1,71 @@
+/**
+ * [의도] Sweet Puzzle 게임의 8x8 게임 보드를 Cocos Creator 환경에서 관리
+ * [책임] 보드 상태 관리, 블록 배치, 보드 렌더링, 보드 조작 기능
+ */
+
+import { _decorator, Component, Node, Prefab, instantiate, Vec3 } from 'cc';
+import { Block } from './Block';
+import { BlockType, BlockPosition, BlockTypeHelper } from './BlockType';
+
+const { ccclass, property } = _decorator;
+
+export interface BoardConfig {
+    width: number;
+    height: number;
+    cellSize: number;
+    padding: number;
+}
+
+export interface SwapResult {
+    success: boolean;
+    error?: string;
+    swappedBlocks?: [Block, Block];
+}
+
+@ccclass('GameBoard')
+export class GameBoard extends Component {
+    
+    @property(Prefab)
+    private blockPrefab: Prefab = null!;
+    
+    @property(Node)
+    private boardContainer: Node = null!;
+    
+    // 보드 설정
+    private _config: BoardConfig = {
+        width: 8,
+        height: 8,
+        cellSize: 60,
+        padding: 10
+    };
+    
+    // 보드 상태
+    private _board: Block[][] = [];
+    private _isLocked: boolean = false;
+    private _selectedBlock: Block | null = null;
+    
+    // 통계
+    private _totalBlocks: number = 0;
+    private _emptyBlocks: number = 0;
+    
+    get config(): BoardConfig { return this._config; }
+    get board(): Block[][] { return this._board; }
+    get isLocked(): boolean { return this._isLocked; }
+    get selectedBlock(): Block | null { return this._selectedBlock; }
+    get totalBlocks(): number { return this._totalBlocks; }
+    get emptyBlocks(): number { return this._emptyBlocks; }
+    
+    /**
+     * [의도] 게임 보드 초기화
+     * [책임] 보드 구조 생성, 컨테이너 설정, 이벤트 리스너 등록
+     */
+    public initialize(config?: Partial<BoardConfig>): void {
+        if (config) {
+            this._config = { ...this._config, ...config };
+        }
+        
+        this.initializeBoard();
+        this.setupContainer();
+        this.generateRandomBoard();
+        
+        console.log(`[GameBoard] 초기화 완료: ${this._config.width}x${this._config.height}`);\n    }\n    \n    /**\n     * [의도] 빈 보드 구조 생성\n     */\n    private initializeBoard(): void {\n        this._board = [];\n        this._totalBlocks = 0;\n        this._emptyBlocks = 0;\n        \n        for (let y = 0; y < this._config.height; y++) {\n            this._board[y] = [];\n            for (let x = 0; x < this._config.width; x++) {\n                this._board[y][x] = null!; // 나중에 블록으로 채워짐\n                this._totalBlocks++;\n            }\n        }\n    }\n    \n    /**\n     * [의도] 보드 컨테이너 설정\n     */\n    private setupContainer(): void {\n        if (!this.boardContainer) {\n            console.error('[GameBoard] boardContainer가 설정되지 않았습니다');\n            return;\n        }\n        \n        // 컨테이너 위치 및 크기 설정\n        this.boardContainer.setPosition(0, 0, 0);\n        \n        console.log('[GameBoard] 컨테이너 설정 완료');\n    }\n    \n    /**\n     * [의도] 랜덤 보드 생성 (초기 매치 방지)\n     */\n    public generateRandomBoard(): void {\n        console.log('[GameBoard] 랜덤 보드 생성 시작');\n        \n        for (let y = 0; y < this._config.height; y++) {\n            for (let x = 0; x < this._config.width; x++) {\n                let blockType: BlockType;\n                let attempts = 0;\n                const maxAttempts = 10;\n                \n                do {\n                    blockType = BlockTypeHelper.getRandomBlockType();\n                    attempts++;\n                } while (\n                    attempts < maxAttempts && \n                    this.wouldCreateInitialMatch(x, y, blockType)\n                );\n                \n                this.createBlockAt(x, y, blockType);\n            }\n        }\n        \n        this.updateBlockCount();\n        console.log(`[GameBoard] 랜덤 보드 생성 완료: ${this._totalBlocks - this._emptyBlocks}개 블록`);\n    }\n    \n    /**\n     * [의도] 초기 매치가 생성되는지 확인\n     */\n    private wouldCreateInitialMatch(x: number, y: number, type: BlockType): boolean {\n        // 왼쪽 2개 블록 확인\n        if (x >= 2) {\n            const left1 = this.getBlockAt(x - 1, y);\n            const left2 = this.getBlockAt(x - 2, y);\n            if (left1 && left2 && \n                left1.blockType === type && left2.blockType === type) {\n                return true;\n            }\n        }\n        \n        // 위쪽 2개 블록 확인\n        if (y >= 2) {\n            const up1 = this.getBlockAt(x, y - 1);\n            const up2 = this.getBlockAt(x, y - 2);\n            if (up1 && up2 && \n                up1.blockType === type && up2.blockType === type) {\n                return true;\n            }\n        }\n        \n        return false;\n    }\n    \n    /**\n     * [의도] 지정된 위치에 블록 생성\n     */\n    public createBlockAt(x: number, y: number, type: BlockType): Block {\n        if (!this.isValidPosition(x, y)) {\n            throw new Error(`[GameBoard] 잘못된 위치: (${x}, ${y})`);\n        }\n        \n        // 기존 블록이 있다면 제거\n        const existingBlock = this._board[y][x];\n        if (existingBlock) {\n            existingBlock.destroy();\n        }\n        \n        // 새 블록 생성\n        const blockNode = instantiate(this.blockPrefab);\n        const blockComponent = blockNode.getComponent(Block)!;\n        \n        // 보드 컨테이너에 추가\n        this.boardContainer.addChild(blockNode);\n        \n        // 블록 초기화\n        blockComponent.initialize(type, x, y);\n        \n        // 터치 이벤트 콜백 설정\n        blockComponent.onTouchStartCallback = (block, event) => this.onBlockTouchStart(block, event);\n        blockComponent.onTouchMoveCallback = (block, event) => this.onBlockTouchMove(block, event);\n        blockComponent.onTouchEndCallback = (block, event) => this.onBlockTouchEnd(block, event);\n        \n        // 보드에 저장\n        this._board[y][x] = blockComponent;\n        \n        return blockComponent;\n    }\n    \n    /**\n     * [의도] 지정된 위치의 블록 반환\n     */\n    public getBlockAt(x: number, y: number): Block | null {\n        if (!this.isValidPosition(x, y)) {\n            return null;\n        }\n        return this._board[y][x];\n    }\n    \n    /**\n     * [의도] 위치가 유효한지 확인\n     */\n    public isValidPosition(x: number, y: number): boolean {\n        return x >= 0 && x < this._config.width && y >= 0 && y < this._config.height;\n    }\n    \n    /**\n     * [의도] 두 블록 교환\n     */\n    public async swapBlocks(block1: Block, block2: Block): Promise<SwapResult> {\n        if (this._isLocked) {\n            return { success: false, error: '보드가 잠겨있습니다' };\n        }\n        \n        if (!this.areAdjacent(block1, block2)) {\n            return { success: false, error: '인접하지 않은 블록입니다' };\n        }\n        \n        console.log(`[GameBoard] 블록 교환: ${block1.blockType} <-> ${block2.blockType}`);\n        \n        this._isLocked = true;\n        \n        try {\n            // 애니메이션과 함께 교환\n            await block1.playSwapAnimation(block2);\n            \n            // 보드 배열에서도 교환\n            const pos1 = block1.position;\n            const pos2 = block2.position;\n            \n            this._board[pos1.y][pos1.x] = block2;\n            this._board[pos2.y][pos2.x] = block1;\n            \n            return { success: true, swappedBlocks: [block1, block2] };\n        } catch (error) {\n            console.error('[GameBoard] 블록 교환 실패:', error);\n            return { success: false, error: '교환 애니메이션 실패' };\n        } finally {\n            this._isLocked = false;\n        }\n    }\n    \n    /**\n     * [의도] 두 블록이 인접한지 확인\n     */\n    private areAdjacent(block1: Block, block2: Block): boolean {\n        const pos1 = block1.position;\n        const pos2 = block2.position;\n        \n        const dx = Math.abs(pos1.x - pos2.x);\n        const dy = Math.abs(pos1.y - pos2.y);\n        \n        return (dx === 1 && dy === 0) || (dx === 0 && dy === 1);\n    }\n    \n    /**\n     * [의도] 중력 적용 - 빈 공간을 아래로 떨어뜨림\n     */\n    public async applyGravity(): Promise<number> {\n        let totalMoves = 0;\n        const movements: Promise<void>[] = [];\n        \n        console.log('[GameBoard] 중력 적용 시작');\n        \n        for (let x = 0; x < this._config.width; x++) {\n            let writeIndex = this._config.height - 1; // 아래부터 채워나감\n            \n            // 위에서 아래로 스캔하면서 블록을 아래로 이동\n            for (let y = this._config.height - 1; y >= 0; y--) {\n                const block = this._board[y][x];\n                \n                if (block && block.blockType !== BlockType.EMPTY) {\n                    if (y !== writeIndex) {\n                        // 블록을 아래로 이동\n                        this._board[writeIndex][x] = block;\n                        this._board[y][x] = null!;\n                        \n                        // 애니메이션\n                        movements.push(block.playFallAnimation(writeIndex));\n                        totalMoves++;\n                    }\n                    writeIndex--;\n                }\n            }\n            \n            // 빈 공간을 새 블록으로 채움\n            for (let y = 0; y <= writeIndex; y++) {\n                const newBlockType = BlockTypeHelper.getRandomBlockType();\n                const newBlock = this.createBlockAt(x, y, newBlockType);\n                \n                // 위에서 떨어지는 애니메이션\n                newBlock.node.setPosition(\n                    newBlock.node.position.x,\n                    newBlock.node.position.y + 300,\n                    0\n                );\n                movements.push(newBlock.playFallAnimation(y, 0.5));\n                totalMoves++;\n            }\n        }\n        \n        // 모든 애니메이션 완료 대기\n        await Promise.all(movements);\n        \n        this.updateBlockCount();\n        console.log(`[GameBoard] 중력 적용 완료: ${totalMoves}개 블록 이동`);\n        \n        return totalMoves;\n    }\n    \n    /**\n     * [의도] 매치된 블록들 제거\n     */\n    public async removeBlocks(blocks: Block[]): Promise<void> {\n        console.log(`[GameBoard] ${blocks.length}개 블록 제거 시작`);\n        \n        const removePromises = blocks.map(async (block) => {\n            await block.playMatchAnimation();\n            \n            // 보드에서 제거\n            const pos = block.position;\n            this._board[pos.y][pos.x] = null!;\n            \n            // 노드 제거\n            block.destroy();\n        });\n        \n        await Promise.all(removePromises);\n        \n        this.updateBlockCount();\n        console.log('[GameBoard] 블록 제거 완료');\n    }\n    \n    /**\n     * [의도] 보드 섞기\n     */\n    public shuffleBoard(): void {\n        console.log('[GameBoard] 보드 섞기 시작');\n        \n        const allBlocks: Block[] = [];\n        const allTypes: BlockType[] = [];\n        \n        // 모든 블록 수집\n        for (let y = 0; y < this._config.height; y++) {\n            for (let x = 0; x < this._config.width; x++) {\n                const block = this._board[y][x];\n                if (block && block.blockType !== BlockType.EMPTY) {\n                    allBlocks.push(block);\n                    allTypes.push(block.blockType);\n                }\n            }\n        }\n        \n        // 타입 섞기\n        for (let i = allTypes.length - 1; i > 0; i--) {\n            const j = Math.floor(Math.random() * (i + 1));\n            [allTypes[i], allTypes[j]] = [allTypes[j], allTypes[i]];\n        }\n        \n        // 새로운 타입 적용\n        allBlocks.forEach((block, index) => {\n            block.setBlockType(allTypes[index]);\n        });\n        \n        console.log('[GameBoard] 보드 섞기 완료');\n    }\n    \n    /**\n     * [의도] 블록 개수 업데이트\n     */\n    private updateBlockCount(): void {\n        let emptyCount = 0;\n        \n        for (let y = 0; y < this._config.height; y++) {\n            for (let x = 0; x < this._config.width; x++) {\n                const block = this._board[y][x];\n                if (!block || block.blockType === BlockType.EMPTY) {\n                    emptyCount++;\n                }\n            }\n        }\n        \n        this._emptyBlocks = emptyCount;\n    }\n    \n    /**\n     * [의도] 블록 터치 시작 이벤트 처리\n     */\n    private onBlockTouchStart(block: Block, event: any): void {\n        if (this._isLocked) return;\n        \n        console.log(`[GameBoard] 블록 선택: ${block.blockType} at (${block.position.x}, ${block.position.y})`);\n        \n        if (this._selectedBlock) {\n            // 이미 선택된 블록이 있는 경우\n            if (this._selectedBlock === block) {\n                // 같은 블록을 다시 선택 - 선택 해제\n                this._selectedBlock.playDeselectAnimation();\n                this._selectedBlock = null;\n            } else {\n                // 다른 블록 선택 - 교환 시도\n                this.attemptSwap(this._selectedBlock, block);\n            }\n        } else {\n            // 새로운 블록 선택\n            this._selectedBlock = block;\n        }\n    }\n    \n    /**\n     * [의도] 블록 터치 이동 이벤트 처리\n     */\n    private onBlockTouchMove(block: Block, event: any): void {\n        // 드래그 동작 처리 (향후 구현)\n    }\n    \n    /**\n     * [의도] 블록 터치 종료 이벤트 처리\n     */\n    private onBlockTouchEnd(block: Block, event: any): void {\n        // 터치 종료 처리\n    }\n    \n    /**\n     * [의도] 블록 교환 시도\n     */\n    private async attemptSwap(block1: Block, block2: Block): Promise<void> {\n        const result = await this.swapBlocks(block1, block2);\n        \n        if (result.success) {\n            // 교환 성공 - 선택 해제\n            this._selectedBlock = null;\n            block1.playDeselectAnimation();\n        } else {\n            // 교환 실패 - 다른 블록 선택으로 전환\n            this._selectedBlock.playDeselectAnimation();\n            this._selectedBlock = block2;\n        }\n    }\n    \n    /**\n     * [의도] 보드 상태를 문자열로 출력 (디버깅용)\n     */\n    public debugPrintBoard(): void {\n        console.log('[GameBoard] 현재 보드 상태:');\n        for (let y = 0; y < this._config.height; y++) {\n            let row = '';\n            for (let x = 0; x < this._config.width; x++) {\n                const block = this._board[y][x];\n                if (block) {\n                    row += BlockTypeHelper.getBlockEmoji(block.blockType) + ' ';\n                } else {\n                    row += '⬜ ';\n                }\n            }\n            console.log(row);\n        }\n    }\n}

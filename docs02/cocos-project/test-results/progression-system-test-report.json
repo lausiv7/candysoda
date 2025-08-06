@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-08-06T01:02:38.605Z",
+  "duration": 0.148,
+  "successRate": 97,
+  "totalTests": 32,
+  "results": {
+    "compilation": {
+      "passed": 16,
+      "failed": 0,
+      "errors": []
+    },
+    "unitTests": {
+      "passed": 8,
+      "failed": 0,
+      "errors": []
+    },
+    "integrationTests": {
+      "passed": 7,
+      "failed": 1,
+      "errors": [
+        "플로우 실패: 데이터 백업 플로우"
+      ]
+    },
+    "totalTests": 32,
+    "startTime": 1754442158457
+  },
+  "summary": {
+    "status": "PASS",
+    "readyForNextPhase": true,
+    "recommendedActions": [
+      "UI 시스템 구현 진행",
+      "성능 최적화 고려"
+    ]
+  }
+}

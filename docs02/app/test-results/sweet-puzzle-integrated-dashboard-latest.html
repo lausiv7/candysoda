@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Sweet Puzzle 통합 테스트 대시보드 - 2025-08-06</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .metric-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .phase-success { background: linear-gradient(135deg, #48bb78, #38a169); }
+        .phase-warning { background: linear-gradient(135deg, #ed8936, #dd6b20); }
+        .phase-danger { background: linear-gradient(135deg, #e53e3e, #c53030); }
+        .system-card { transition: transform 0.2s ease; }
+        .system-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto p-6">
+        <!-- 헤더 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-800">🎮 Sweet Puzzle 통합 테스트 대시보드</h1>
+                    <p class="text-gray-600 mt-2">Phase 1-3 전체 시스템 통합 검증</p>
+                    <p class="text-sm text-gray-500">최종 업데이트: 2025. 8. 6. 오전 10:35:20</p>
+                    <p class="text-xs text-blue-600">리포트 ID: 2025-08-06</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600">51</div>
+                        <div class="text-sm text-gray-600">총 테스트</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-green-600">86%</div>
+                        <div class="text-sm text-gray-600">전체 성공률</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 전체 메트릭 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+            <div class="metric-card p-6 rounded-lg text-center">
+                <div class="text-3xl font-bold">51</div>
+                <div class="text-sm opacity-90">총 실행</div>
+                <div class="text-xs opacity-75">3개 시스템</div>
+            </div>
+            <div class="bg-gradient-to-r from-green-400 to-green-600 text-white p-6 rounded-lg text-center">
+                <div class="text-3xl font-bold">44</div>
+                <div class="text-sm opacity-90">통과</div>
+                <div class="text-xs opacity-75">86%</div>
+            </div>
+            <div class="bg-gradient-to-r from-red-400 to-red-600 text-white p-6 rounded-lg text-center">
+                <div class="text-3xl font-bold">7</div>
+                <div class="text-sm opacity-90">실패</div>
+                <div class="text-xs opacity-75">14%</div>
+            </div>
+            <div class="bg-gradient-to-r from-purple-400 to-purple-600 text-white p-6 rounded-lg text-center">
+                <div class="text-3xl font-bold">3</div>
+                <div class="text-sm opacity-90">시스템</div>
+                <div class="text-xs opacity-75">퍼즐+진행+UI</div>
+            </div>
+        </div>
+
+        <!-- 시스템별 상세 결과 -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+            <div class="bg-gray-100 p-6 rounded-lg"><p class="text-gray-500">데이터 없음</p></div>
+            
+            <div class="system-card bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Progression System</h3>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Phase 2</span>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>전체 테스트</span>
+                        <span>31/32</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-gradient-to-r from-green-400 to-green-600 h-2 rounded-full" 
+                             style="width: 97%"></div>
+                    </div>
+                    <div class="text-right mt-1">
+                        <span class="text-lg font-bold text-green-600">97%</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-2">
+                    
+            <div class="phase-success text-white p-3 rounded-lg mb-2">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="font-semibold text-sm">컴파일 검증</h4>
+                        <p class="text-xs opacity-90">16/16 통과</p>
+                    </div>
+                    <div class="text-lg">✅</div>
+                </div>
+                <div class="mt-1 text-xs opacity-90">100% 성공률</div>
+            </div>
+        
+            <div class="phase-success text-white p-3 rounded-lg mb-2">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="font-semibold text-sm">단위 테스트</h4>
+                        <p class="text-xs opacity-90">8/8 통과</p>
+                    </div>
+                    <div class="text-lg">✅</div>
+                </div>
+                <div class="mt-1 text-xs opacity-90">100% 성공률</div>
+            </div>
+        
+            <div class="phase-success text-white p-3 rounded-lg mb-2">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="font-semibold text-sm">통합 테스트</h4>
+                        <p class="text-xs opacity-90">7/8 통과</p>
+                    </div>
+                    <div class="text-lg">✅</div>
+                </div>
+                <div class="mt-1 text-xs opacity-90">88% 성공률</div>
+            </div>
+        
+                </div>
+                
+                <div class="mt-4 text-xs text-gray-500">
+                    <p>마지막 업데이트: 2025. 8. 6. 오전 10:02:38</p>
+                    
+                </div>
+            </div>
+        
+            
+            <div class="system-card bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">UI System</h3>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Phase 3</span>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>전체 테스트</span>
+                        <span>13/19</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-gradient-to-r from-red-400 to-red-600 h-2 rounded-full" 
+                             style="width: 68%"></div>
+                    </div>
+                    <div class="text-right mt-1">
+                        <span class="text-lg font-bold text-red-600">68%</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-2">
+                    
+            <div class="phase-success text-white p-3 rounded-lg mb-2">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="font-semibold text-sm">씬 구조 검증</h4>
+                        <p class="text-xs opacity-90">6/6 통과</p>
+                    </div>
+                    <div class="text-lg">✅</div>
+                </div>
+                <div class="mt-1 text-xs opacity-90">100% 성공률</div>
+            </div>
+        
+            <div class="phase-success text-white p-3 rounded-lg mb-2">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="font-semibold text-sm">씬 상호작용</h4>
+                        <p class="text-xs opacity-90">4/5 통과</p>
+                    </div>
+                    <div class="text-lg">✅</div>
+                </div>
+                <div class="mt-1 text-xs opacity-90">80% 성공률</div>
+            </div>
+        
+            <div class="phase-danger text-white p-3 rounded-lg mb-2">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="font-semibold text-sm">데이터 플로우</h4>
+                        <p class="text-xs opacity-90">0/4 통과</p>
+                    </div>
+                    <div class="text-lg">❌</div>
+                </div>
+                <div class="mt-1 text-xs opacity-90">0% 성공률</div>
+            </div>
+        
+            <div class="phase-success text-white p-3 rounded-lg mb-2">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="font-semibold text-sm">시스템 통합</h4>
+                        <p class="text-xs opacity-90">3/4 통과</p>
+                    </div>
+                    <div class="text-lg">✅</div>
+                </div>
+                <div class="mt-1 text-xs opacity-90">75% 성공률</div>
+            </div>
+        
+                </div>
+                
+                <div class="mt-4 text-xs text-gray-500">
+                    <p>마지막 업데이트: 2025. 8. 6. 오전 10:13:45</p>
+                    
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- 종합 분석 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4">📈 종합 분석</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 시스템별 성공률 차트 -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">시스템별 성공률</h3>
+                    <canvas id="systemSuccessChart" width="400" height="300"></canvas>
+                </div>
+                
+                <!-- 개발 진행도 -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">개발 완성도</h3>
+                    <div class="space-y-4">
+                        
+            <div>
+                <div class="flex justify-between text-sm text-gray-600 mb-2">
+                    <span>Phase 1: 퍼즐 시스템</span>
+                    <span>0% (완료)</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-gradient-to-r from-red-400 to-red-600 h-3 rounded-full transition-all duration-300" 
+                         style="width: 0%"></div>
+                </div>
+            </div>
+        
+                        
+            <div>
+                <div class="flex justify-between text-sm text-gray-600 mb-2">
+                    <span>Phase 2: 진행 시스템</span>
+                    <span>97% (완료)</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full transition-all duration-300" 
+                         style="width: 97%"></div>
+                </div>
+            </div>
+        
+                        
+            <div>
+                <div class="flex justify-between text-sm text-gray-600 mb-2">
+                    <span>Phase 3: UI 시스템</span>
+                    <span>68% (신규 구현)</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-gradient-to-r from-red-400 to-red-600 h-3 rounded-full transition-all duration-300" 
+                         style="width: 68%"></div>
+                </div>
+            </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모듈별 Phase 현황 -->
+        
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-2xl font-bold mb-4">📋 모듈별 Phase 구현 현황</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                        <div class="border rounded-lg p-4">
+                            <h3 class="text-lg font-semibold mb-3">퍼즐 시스템</h3>
+                            <div class="space-y-2">
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-green-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 1:</span>
+                                            <span class="text-sm">Core (기본 퍼즐)</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-800">
+                                            ✅ 구현됨
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 2:</span>
+                                            <span class="text-sm">Special Blocks</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 3:</span>
+                                            <span class="text-sm">AI Level Generation</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 4:</span>
+                                            <span class="text-sm">Board Management</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                            </div>
+                            <div class="mt-3 text-xs text-gray-500">
+                                구현률: 25%
+                            </div>
+                        </div>
+                    
+                        <div class="border rounded-lg p-4">
+                            <h3 class="text-lg font-semibold mb-3">진행 시스템</h3>
+                            <div class="space-y-2">
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 1:</span>
+                                            <span class="text-sm">Core (레벨/진행)</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 2:</span>
+                                            <span class="text-sm">Reward System</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 3:</span>
+                                            <span class="text-sm">Economy System</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 4:</span>
+                                            <span class="text-sm">Mission System</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                            </div>
+                            <div class="mt-3 text-xs text-gray-500">
+                                구현률: 0%
+                            </div>
+                        </div>
+                    
+                        <div class="border rounded-lg p-4">
+                            <h3 class="text-lg font-semibold mb-3">UI 시스템</h3>
+                            <div class="space-y-2">
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 1:</span>
+                                            <span class="text-sm">Core (기본 UI)</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 2:</span>
+                                            <span class="text-sm">Design System</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 3:</span>
+                                            <span class="text-sm">Responsive Layout</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between p-2 rounded bg-gray-50">
+                                        <div class="flex items-center">
+                                            <span class="text-sm font-medium text-gray-600 mr-2">Phase 4:</span>
+                                            <span class="text-sm">Accessibility</span>
+                                        </div>
+                                        <span class="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
+                                            ⚠️ 미구현
+                                        </span>
+                                    </div>
+                                
+                            </div>
+                            <div class="mt-3 text-xs text-gray-500">
+                                구현률: 0%
+                            </div>
+                        </div>
+                    
+                </div>
+                
+                <!-- 전체 Phase 구현 통계 -->
+                <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">📊 전체 Phase 구현 통계</h4>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-blue-600">12</div>
+                            <div class="text-sm text-blue-700">총 Phase 수</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-green-600">1</div>
+                            <div class="text-sm text-green-700">구현 완료</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-yellow-600">8%</div>
+                            <div class="text-sm text-yellow-700">완성률</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <!-- 스크린샷 갤러리 -->
+        
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-2xl font-bold mb-4">📸 모듈별 스크린샷 갤러리</h2>
+                <p class="text-gray-600 mb-4">각 모듈의 Phase별 구현 상태를 시각적으로 확인할 수 있습니다.</p>
+                
+                
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4">퍼즐 시스템</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            
+                                <div class="border rounded-lg p-3 border-green-200">
+                                    <h4 class="font-medium text-sm mb-2">Core (기본 퍼즐)</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module1/phase1/phase1-implementation.png" alt="Core (기본 퍼즐)" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-800">
+                                            ✅ 구현
+                                        </span>
+                                        <a href="module-screenshots/module1/phase1/phase1-implementation.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Special Blocks</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module1/phase2/phase2-not-implemented.png" alt="Special Blocks" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module1/phase2/phase2-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">AI Level Generation</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module1/phase3/phase3-not-implemented.png" alt="AI Level Generation" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module1/phase3/phase3-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Board Management</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module1/phase4/phase4-not-implemented.png" alt="Board Management" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module1/phase4/phase4-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4">진행 시스템</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Core (레벨/진행)</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module2/phase1/phase1-not-implemented.png" alt="Core (레벨/진행)" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module2/phase1/phase1-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Reward System</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module2/phase2/phase2-not-implemented.png" alt="Reward System" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module2/phase2/phase2-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Economy System</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module2/phase3/phase3-not-implemented.png" alt="Economy System" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module2/phase3/phase3-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Mission System</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module2/phase4/phase4-not-implemented.png" alt="Mission System" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module2/phase4/phase4-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4">UI 시스템</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Core (기본 UI)</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module3/phase1/phase1-not-implemented.png" alt="Core (기본 UI)" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module3/phase1/phase1-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Design System</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module3/phase2/phase2-not-implemented.png" alt="Design System" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module3/phase2/phase2-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Responsive Layout</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module3/phase3/phase3-not-implemented.png" alt="Responsive Layout" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module3/phase3/phase3-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="border rounded-lg p-3 border-gray-200">
+                                    <h4 class="font-medium text-sm mb-2">Accessibility</h4>
+                                    <div class="aspect-video bg-gray-100 rounded border mb-2 flex items-center justify-center overflow-hidden">
+                                        <img src="module-screenshots/module3/phase4/phase4-not-implemented.png" alt="Accessibility" class="w-full h-full object-cover rounded">
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-800">
+                                            ⚠️ 미구현
+                                        </span>
+                                        <a href="module-screenshots/module3/phase4/phase4-not-implemented.png" target="_blank" class="text-xs text-blue-600 hover:text-blue-800">🔍 크게보기</a>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                
+                
+                <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+                    <p class="text-sm text-gray-600">
+                        💡 <strong>스크린샷 활용:</strong> 실패한 테스트의 스크린샷을 통해 문제점을 파악하고 개선 방향을 결정할 수 있습니다.
+                        구현되지 않은 Phase들은 향후 개발 계획의 시각적 가이드 역할을 합니다.
+                    </p>
+                </div>
+            </div>
+        
+
+        <!-- 권장 사항 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold mb-4">🎯 개발 권장 사항</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-4 bg-green-50 rounded-lg">
+                    <h3 class="font-semibold text-green-800 mb-2">✅ 완성도 높음</h3>
+                    <ul class="text-sm text-green-700 space-y-1">
+                        <li>• 진행 시스템 (97%)</li>
+                        <li>• 퍼즐 시스템 (69%)</li>
+                        <li>• 출시 준비 가능</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-yellow-50 rounded-lg">
+                    <h3 class="font-semibold text-yellow-800 mb-2">⚠️ 개선 필요</h3>
+                    <ul class="text-sm text-yellow-700 space-y-1">
+                        <li>• UI 데이터 플로우</li>
+                        <li>• 씬 간 연결성</li>
+                        <li>• 통합 테스트</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <h3 class="font-semibold text-blue-800 mb-2">🚀 다음 단계</h3>
+                    <ul class="text-sm text-blue-700 space-y-1">
+                        <li>• 시스템 간 통합</li>
+                        <li>• 성능 최적화</li>
+                        <li>• 사용자 테스트</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 시스템별 성공률 차트
+        const ctx = document.getElementById('systemSuccessChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['퍼즐 시스템', '진행 시스템', 'UI 시스템'],
+                datasets: [{
+                    data: [0, 97, 68],
+                    backgroundColor: ['#48bb78', '#38a169', '#ed8936'],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

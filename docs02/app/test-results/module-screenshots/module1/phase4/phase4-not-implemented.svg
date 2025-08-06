@@ -1,0 +1,30 @@
+
+            <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f3f4f6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e5e7eb;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="600" fill="url(#grad1)" stroke="#d1d5db" stroke-width="2"/>
+                
+                <!-- 큰 아이콘 -->
+                <circle cx="400" cy="200" r="60" fill="#9ca3af" opacity="0.5"/>
+                <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" fill="#6b7280">⚠️</text>
+                
+                <!-- 제목 -->
+                <text x="400" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#374151">퍼즐 시스템</text>
+                <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">Board Management</text>
+                
+                <!-- 상태 -->
+                <text x="400" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ef4444">미구현 상태</text>
+                <text x="400" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af">This phase is not yet implemented</text>
+                
+                <!-- 구현 계획 정보 -->
+                <text x="400" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">구현 계획에는 포함되어 있음</text>
+                <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">향후 개발 예정</text>
+                
+                <!-- 타임스탬프 -->
+                <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9ca3af">캡처: 2025. 8. 6. 오전 10:34:13</text>
+            </svg>
+        

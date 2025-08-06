@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-08-06T01:13:45.067Z",
+  "system": "UI System",
+  "duration": 0.205,
+  "successRate": 68,
+  "totalTests": 19,
+  "results": {
+    "sceneStructure": {
+      "passed": 6,
+      "failed": 0,
+      "errors": []
+    },
+    "sceneInteraction": {
+      "passed": 4,
+      "failed": 1,
+      "errors": [
+        "상호작용 미완성: MainMenu → WorldMap 전환"
+      ]
+    },
+    "dataFlow": {
+      "passed": 0,
+      "failed": 4,
+      "errors": [
+        "데이터 플로우 미완성: 레벨 데이터 전달 플로우",
+        "데이터 플로우 미완성: 레벨 완료 결과 플로우",
+        "데이터 플로우 미완성: 월드맵 상태 플로우",
+        "데이터 플로우 미완성: 일시정지 상태 플로우"
+      ]
+    },
+    "integration": {
+      "passed": 3,
+      "failed": 1,
+      "errors": [
+        "시스템 통합 미완성: UI-진행 시스템 통합"
+      ]
+    },
+    "totalTests": 19,
+    "startTime": 1754442824862
+  },
+  "summary": {
+    "status": "FAIL",
+    "readyForRelease": false,
+    "recommendedActions": [
+      "UI 아키텍처 재검토",
+      "씬 구조 개선",
+      "전면적인 UI 시스템 점검"
+    ]
+  }
+}

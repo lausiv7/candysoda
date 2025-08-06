@@ -1,0 +1,97 @@
+{
+  "totalTests": 80,
+  "executedTests": 80,
+  "passedTests": 55,
+  "failedTests": 25,
+  "phases": {
+    "phase1": {
+      "name": "게임 초기화 및 UI",
+      "total": 12,
+      "passed": 8,
+      "failed": 4,
+      "passRate": 0.7
+    },
+    "phase2": {
+      "name": "블록 선택 및 상호작용",
+      "total": 15,
+      "passed": 9,
+      "failed": 6,
+      "passRate": 0.6
+    },
+    "phase3": {
+      "name": "매치 감지 및 처리",
+      "total": 12,
+      "passed": 9,
+      "failed": 3,
+      "passRate": 0.8
+    },
+    "phase4": {
+      "name": "중력 및 연쇄반응",
+      "total": 10,
+      "passed": 7,
+      "failed": 3,
+      "passRate": 0.75
+    },
+    "phase5": {
+      "name": "게임 제어 기능",
+      "total": 8,
+      "passed": 7,
+      "failed": 1,
+      "passRate": 0.9
+    },
+    "phase6": {
+      "name": "디버그 도구",
+      "total": 6,
+      "passed": 5,
+      "failed": 1,
+      "passRate": 0.95
+    },
+    "phase7": {
+      "name": "성능 및 안정성",
+      "total": 9,
+      "passed": 5,
+      "failed": 4,
+      "passRate": 0.65
+    },
+    "phase8": {
+      "name": "브라우저 호환성",
+      "total": 8,
+      "passed": 5,
+      "failed": 3,
+      "passRate": 0.7
+    }
+  },
+  "browsers": {
+    "chromium": {
+      "total": 16,
+      "passed": 12,
+      "failed": 4,
+      "passRate": 0.75
+    },
+    "firefox": {
+      "total": 16,
+      "passed": 11,
+      "failed": 5,
+      "passRate": 0.7
+    },
+    "webkit": {
+      "total": 16,
+      "passed": 10,
+      "failed": 6,
+      "passRate": 0.65
+    },
+    "Mobile-Chrome": {
+      "total": 16,
+      "passed": 12,
+      "failed": 4,
+      "passRate": 0.8
+    },
+    "Mobile-Safari": {
+      "total": 16,
+      "passed": 12,
+      "failed": 4,
+      "passRate": 0.78
+    }
+  },
+  "detailedResults": []
+}

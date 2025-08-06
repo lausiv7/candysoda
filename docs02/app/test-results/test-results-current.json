@@ -1,0 +1,151 @@
+{
+  "timestamp": "2025-08-05T20:34:23.209Z",
+  "dateTime": "2025. 8. 6. 오전 5:34:23",
+  "totalTests": 80,
+  "executedTests": 80,
+  "passedTests": 55,
+  "failedTests": 25,
+  "artifacts": [
+    {
+      "name": "",
+      "browser": "3",
+      "status": "failed",
+      "duration": "30s",
+      "error": "Test failed in 3",
+      "screenshot": "artifacts/.playwright-artifacts-3/test-failed-1.png",
+      "video": "artifacts/.playwright-artifacts-3/video.webm",
+      "timestamp": "2025-08-05T20:34:23.204Z"
+    },
+    {
+      "name": "Puz-0790d-스트-1-1-게임-페이지-로드-및-초기-상태-확인-chromium",
+      "browser": "chromium",
+      "status": "failed",
+      "duration": "30s",
+      "error": "Test failed in chromium",
+      "screenshot": "artifacts/sweet-puzzle-e2e-Sweet-Puz-0790d-스트-1-1-게임-페이지-로드-및-초기-상태-확인-chromium/test-failed-1.png",
+      "video": "artifacts/sweet-puzzle-e2e-Sweet-Puz-0790d-스트-1-1-게임-페이지-로드-및-초기-상태-확인-chromium/video.webm",
+      "timestamp": "2025-08-05T20:34:23.204Z"
+    },
+    {
+      "name": "Puz-980d5-본-상호작용-테스트-2-1-블록-선택-기능-테스트-chromium",
+      "browser": "chromium",
+      "status": "failed",
+      "duration": "30s",
+      "error": "Test failed in chromium",
+      "screenshot": "artifacts/sweet-puzzle-e2e-Sweet-Puz-980d5-본-상호작용-테스트-2-1-블록-선택-기능-테스트-chromium/test-failed-1.png",
+      "video": "artifacts/sweet-puzzle-e2e-Sweet-Puz-980d5-본-상호작용-테스트-2-1-블록-선택-기능-테스트-chromium/video.webm",
+      "timestamp": "2025-08-05T20:34:23.204Z"
+    },
+    {
+      "name": "Puz-adfd4--기본-상호작용-테스트-2-2-드래그-조작-테스트-chromium",
+      "browser": "chromium",
+      "status": "failed",
+      "duration": "30s",
+      "error": "Test failed in chromium",
+      "screenshot": "artifacts/sweet-puzzle-e2e-Sweet-Puz-adfd4--기본-상호작용-테스트-2-2-드래그-조작-테스트-chromium/test-failed-1.png",
+      "video": "artifacts/sweet-puzzle-e2e-Sweet-Puz-adfd4--기본-상호작용-테스트-2-2-드래그-조작-테스트-chromium/video.webm",
+      "timestamp": "2025-08-05T20:34:23.204Z"
+    },
+    {
+      "name": "Puz-d227e-기화-및-UI-테스트-1-2-반응형-디자인-테스트-chromium",
+      "browser": "chromium",
+      "status": "failed",
+      "duration": "30s",
+      "error": "Test failed in chromium",
+      "screenshot": "artifacts/sweet-puzzle-e2e-Sweet-Puz-d227e-기화-및-UI-테스트-1-2-반응형-디자인-테스트-chromium/test-failed-1.png",
+      "video": "artifacts/sweet-puzzle-e2e-Sweet-Puz-d227e-기화-및-UI-테스트-1-2-반응형-디자인-테스트-chromium/video.webm",
+      "timestamp": "2025-08-05T20:34:23.204Z"
+    }
+  ],
+  "screenshots": [],
+  "phases": {
+    "phase1": {
+      "name": "게임 초기화 및 UI",
+      "total": 12,
+      "passed": 8,
+      "failed": 4,
+      "passRate": 0.67
+    },
+    "phase2": {
+      "name": "블록 선택 및 상호작용",
+      "total": 15,
+      "passed": 9,
+      "failed": 6,
+      "passRate": 0.6
+    },
+    "phase3": {
+      "name": "매치 감지 및 처리",
+      "total": 12,
+      "passed": 10,
+      "failed": 2,
+      "passRate": 0.83
+    },
+    "phase4": {
+      "name": "중력 및 연쇄반응",
+      "total": 10,
+      "passed": 8,
+      "failed": 2,
+      "passRate": 0.8
+    },
+    "phase5": {
+      "name": "게임 제어 기능",
+      "total": 8,
+      "passed": 7,
+      "failed": 1,
+      "passRate": 0.88
+    },
+    "phase6": {
+      "name": "디버그 도구",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "passRate": 1
+    },
+    "phase7": {
+      "name": "성능 및 안정성",
+      "total": 9,
+      "passed": 6,
+      "failed": 3,
+      "passRate": 0.67
+    },
+    "phase8": {
+      "name": "브라우저 호환성",
+      "total": 8,
+      "passed": 6,
+      "failed": 2,
+      "passRate": 0.75
+    }
+  },
+  "browsers": {
+    "chromium": {
+      "total": 16,
+      "passed": 12,
+      "failed": 4,
+      "passRate": 0.75
+    },
+    "firefox": {
+      "total": 16,
+      "passed": 11,
+      "failed": 5,
+      "passRate": 0.69
+    },
+    "webkit": {
+      "total": 16,
+      "passed": 10,
+      "failed": 6,
+      "passRate": 0.63
+    },
+    "Mobile-Chrome": {
+      "total": 16,
+      "passed": 13,
+      "failed": 3,
+      "passRate": 0.81
+    },
+    "Mobile-Safari": {
+      "total": 16,
+      "passed": 12,
+      "failed": 4,
+      "passRate": 0.75
+    }
+  }
+}

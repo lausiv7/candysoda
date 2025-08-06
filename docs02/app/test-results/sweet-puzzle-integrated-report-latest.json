@@ -1,0 +1,100 @@
+{
+  "timestamp": "2025-08-06T01:35:19.997Z",
+  "reportId": "2025-08-06",
+  "summary": {
+    "totalTests": 51,
+    "totalPassed": 44,
+    "totalFailed": 7,
+    "overallSuccessRate": 86,
+    "status": "EXCELLENT"
+  },
+  "systems": {
+    "puzzle": null,
+    "progression": {
+      "system": "Progression System",
+      "phase": "Phase 2",
+      "timestamp": "2025-08-06T01:02:38.605Z",
+      "totalTests": 32,
+      "passed": 31,
+      "failed": 1,
+      "successRate": 97,
+      "phases": [
+        {
+          "name": "컴파일 검증",
+          "passed": 16,
+          "total": 16,
+          "rate": 100,
+          "status": "success"
+        },
+        {
+          "name": "단위 테스트",
+          "passed": 8,
+          "total": 8,
+          "rate": 100,
+          "status": "success"
+        },
+        {
+          "name": "통합 테스트",
+          "passed": 7,
+          "total": 8,
+          "rate": 88,
+          "status": "success"
+        }
+      ],
+      "artifacts": 0,
+      "screenshots": false
+    },
+    "ui": {
+      "system": "UI System",
+      "phase": "Phase 3",
+      "timestamp": "2025-08-06T01:13:45.067Z",
+      "totalTests": 19,
+      "passed": 13,
+      "failed": 6,
+      "successRate": 68,
+      "phases": [
+        {
+          "name": "씬 구조 검증",
+          "passed": 6,
+          "total": 6,
+          "rate": 100,
+          "status": "success"
+        },
+        {
+          "name": "씬 상호작용",
+          "passed": 4,
+          "total": 5,
+          "rate": 80,
+          "status": "success"
+        },
+        {
+          "name": "데이터 플로우",
+          "passed": 0,
+          "total": 4,
+          "rate": 0,
+          "status": "danger"
+        },
+        {
+          "name": "시스템 통합",
+          "passed": 3,
+          "total": 4,
+          "rate": 75,
+          "status": "success"
+        }
+      ],
+      "artifacts": 0,
+      "screenshots": false
+    }
+  },
+  "recommendations": {
+    "readyForRelease": true,
+    "criticalIssues": false,
+    "nextSteps": [
+      "UI 시스템 데이터 플로우 개선",
+      "씬 간 상호작용 최적화",
+      "시스템 간 완전 통합 테스트",
+      "성능 최적화 및 메모리 관리",
+      "사용자 경험 테스트"
+    ]
+  }
+}

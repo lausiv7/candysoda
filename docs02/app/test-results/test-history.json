@@ -1,0 +1,105 @@
+[
+  {
+    "id": "test-1754426063210",
+    "timestamp": "2025-08-05T20:34:23.209Z",
+    "dateTime": "2025. 8. 6. 오전 5:34:23",
+    "summary": {
+      "totalTests": 80,
+      "executedTests": 80,
+      "passedTests": 55,
+      "failedTests": 25,
+      "successRate": 69
+    },
+    "phases": {
+      "phase1": {
+        "name": "게임 초기화 및 UI",
+        "total": 12,
+        "passed": 8,
+        "failed": 4,
+        "passRate": 0.67
+      },
+      "phase2": {
+        "name": "블록 선택 및 상호작용",
+        "total": 15,
+        "passed": 9,
+        "failed": 6,
+        "passRate": 0.6
+      },
+      "phase3": {
+        "name": "매치 감지 및 처리",
+        "total": 12,
+        "passed": 10,
+        "failed": 2,
+        "passRate": 0.83
+      },
+      "phase4": {
+        "name": "중력 및 연쇄반응",
+        "total": 10,
+        "passed": 8,
+        "failed": 2,
+        "passRate": 0.8
+      },
+      "phase5": {
+        "name": "게임 제어 기능",
+        "total": 8,
+        "passed": 7,
+        "failed": 1,
+        "passRate": 0.88
+      },
+      "phase6": {
+        "name": "디버그 도구",
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "passRate": 1
+      },
+      "phase7": {
+        "name": "성능 및 안정성",
+        "total": 9,
+        "passed": 6,
+        "failed": 3,
+        "passRate": 0.67
+      },
+      "phase8": {
+        "name": "브라우저 호환성",
+        "total": 8,
+        "passed": 6,
+        "failed": 2,
+        "passRate": 0.75
+      }
+    },
+    "browsers": {
+      "chromium": {
+        "total": 16,
+        "passed": 12,
+        "failed": 4,
+        "passRate": 0.75
+      },
+      "firefox": {
+        "total": 16,
+        "passed": 11,
+        "failed": 5,
+        "passRate": 0.69
+      },
+      "webkit": {
+        "total": 16,
+        "passed": 10,
+        "failed": 6,
+        "passRate": 0.63
+      },
+      "Mobile-Chrome": {
+        "total": 16,
+        "passed": 13,
+        "failed": 3,
+        "passRate": 0.81
+      },
+      "Mobile-Safari": {
+        "total": 16,
+        "passed": 12,
+        "failed": 4,
+        "passRate": 0.75
+      }
+    },
+    "reportFile": "test-results/sweet-puzzle-dashboard-2025-08-05T20-34-23.html"
+  }
+]

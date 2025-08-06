@@ -11,7 +11,7 @@
   - listitem: 🌟 Special block detection
   - listitem: 💫 Gravity & physics system
   - listitem: 🔍 Hint system
-- text: "Score: 0 Moves: 0/30 🧡 🧡 🍆 🍎 🍇 🍎 🍎 🥝 🍆 🍌 🍇 🍇 🍌 🧡 🍆 🍆 🍌 🍌 🧡 🍌 🍌 🍇 🍌 🥝 🍇 🥝 🧡 🍆 🍎 🍆 🍎 🍎 🥝 🍆 🥝 🧡 🥝 🍆 🍌 🍇 🍇 🍎 🥝 🧡 🍎 🍇 🍆 🍎 🍇 🍎 🍎 🥝 🥝 🍎 🍆 🥝 🧡 🍇 🍌 🥝 🍎 🍆 🍌 🍆"
+- text: "Score: 0 Moves: 1/30 🥝 🍇 🍆 🍆 🍌 🍌 🍎 🧡 🍎 🍎 🍇 🥝 🍆 🍎 🍌 🍌 🍆 🍆 🧡 🥝 🍌 🍇 🍎 🍌 🍌 🍎 🥝 🍌 🍇 🧡 🍎 🍇 🧡 🍌 🍇 🍎 🧡 🍇 🍌 🥝 🥝 🥝 🍇 🍌 🍌 🧡 🍆 🍆 🍆 🍎 🍎 🍌 🍇 🍎 🍇 🍌 🍆 🍌 🍇 🥝 🍇 🍇 🧡 🍆"
 - button "🔄 Restart"
 - button "💡 Hint"
 - button "🔀 Shuffle"
