@@ -45,6 +45,16 @@ class ModuleScreenshotCapturer {
                     { id: 'phase3', name: 'Responsive Layout', url: null },
                     { id: 'phase4', name: 'Accessibility', url: null }
                 ]
+            },
+            {
+                id: 'module4',
+                name: '소셜 시스템',
+                phases: [
+                    { id: 'phase1', name: 'Core (친구 시스템)', url: 'file://' + path.join(__dirname, '../cocos-project/test-results/social-system-test-report.json') },
+                    { id: 'phase2', name: 'Guild System (길드)', url: 'file://' + path.join(__dirname, '../cocos-project/test-results/complete-social-system-test-report.json') },
+                    { id: 'phase3', name: 'Competition System (리더보드)', url: 'file://' + path.join(__dirname, '../cocos-project/test-results/complete-social-system-test-report.json') },
+                    { id: 'phase4', name: 'Communication System (채팅)', url: 'file://' + path.join(__dirname, '../cocos-project/test-results/complete-social-system-test-report.json') }
+                ]
             }
         ];
     }

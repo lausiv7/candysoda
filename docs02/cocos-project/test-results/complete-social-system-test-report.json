@@ -1,0 +1,958 @@
+{
+  "timestamp": "2025-08-06T06:31:43.608Z",
+  "system": "Complete Social System",
+  "phases": [
+    "Friends",
+    "Guild",
+    "Leaderboard",
+    "Chat"
+  ],
+  "summary": {
+    "totalTests": 127,
+    "passedTests": 115,
+    "failedTests": 12,
+    "successRate": 91,
+    "categoryStats": {
+      "파일 존재 확인": {
+        "total": 7,
+        "passed": 7
+      },
+      "TypeScript 문법": {
+        "total": 7,
+        "passed": 7
+      },
+      "길드 시스템 구조": {
+        "total": 6,
+        "passed": 6
+      },
+      "길드 관리 로직": {
+        "total": 5,
+        "passed": 5
+      },
+      "리더보드 시스템 구조": {
+        "total": 1,
+        "passed": 0
+      },
+      "리더보드 로직": {
+        "total": 5,
+        "passed": 5
+      },
+      "채팅 시스템 구조": {
+        "total": 6,
+        "passed": 6
+      },
+      "채팅 로직": {
+        "total": 6,
+        "passed": 6
+      },
+      "소셜 매니저 통합": {
+        "total": 5,
+        "passed": 5
+      },
+      "이벤트 통합": {
+        "total": 24,
+        "passed": 13
+      },
+      "데이터 플로우": {
+        "total": 25,
+        "passed": 25
+      },
+      "아키텍처": {
+        "total": 30,
+        "passed": 30
+      }
+    }
+  },
+  "details": [
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/SocialManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.617Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/friends/FriendManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.620Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/friends/GiftSystem.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.624Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/core/EventBus.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.626Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/guilds/GuildManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.628Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/competition/LeaderboardManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.631Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/communication/ChatManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.635Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/SocialManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.640Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/friends/FriendManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.647Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/friends/GiftSystem.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.653Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/guilds/GuildManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.662Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/competition/LeaderboardManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.669Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/communication/ChatManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.675Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/core/EventBus.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.680Z"
+    },
+    {
+      "category": "길드 시스템 구조",
+      "testName": "길드 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.686Z"
+    },
+    {
+      "category": "길드 시스템 구조",
+      "testName": "길드 멤버 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.686Z"
+    },
+    {
+      "category": "길드 시스템 구조",
+      "testName": "길드 역할 열거형",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.686Z"
+    },
+    {
+      "category": "길드 시스템 구조",
+      "testName": "길드 생성 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.686Z"
+    },
+    {
+      "category": "길드 시스템 구조",
+      "testName": "가입 신청 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.686Z"
+    },
+    {
+      "category": "길드 시스템 구조",
+      "testName": "멤버 역할 변경",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.686Z"
+    },
+    {
+      "category": "길드 관리 로직",
+      "testName": "길드명 유효성 검사",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.693Z"
+    },
+    {
+      "category": "길드 관리 로직",
+      "testName": "권한 확인 로직",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.693Z"
+    },
+    {
+      "category": "길드 관리 로직",
+      "testName": "멤버 수 제한 체크",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.693Z"
+    },
+    {
+      "category": "길드 관리 로직",
+      "testName": "만료된 요청 정리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.693Z"
+    },
+    {
+      "category": "길드 관리 로직",
+      "testName": "리더 이양 로직",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.693Z"
+    },
+    {
+      "category": "리더보드 시스템 구조",
+      "testName": "LeaderboardManager 검증",
+      "passed": false,
+      "error": "fs.existsExists is not a function",
+      "timestamp": "2025-08-06T06:31:43.693Z"
+    },
+    {
+      "category": "리더보드 로직",
+      "testName": "기본 리더보드 설정",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.701Z"
+    },
+    {
+      "category": "리더보드 로직",
+      "testName": "시즌 종료 처리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.701Z"
+    },
+    {
+      "category": "리더보드 로직",
+      "testName": "새 시즌 시작",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.701Z"
+    },
+    {
+      "category": "리더보드 로직",
+      "testName": "플레이어 순위 조회",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.701Z"
+    },
+    {
+      "category": "리더보드 로직",
+      "testName": "정기 업데이트 타이머",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.701Z"
+    },
+    {
+      "category": "채팅 시스템 구조",
+      "testName": "채팅 메시지 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.708Z"
+    },
+    {
+      "category": "채팅 시스템 구조",
+      "testName": "채팅 채널 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.709Z"
+    },
+    {
+      "category": "채팅 시스템 구조",
+      "testName": "메시지 타입 열거형",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.709Z"
+    },
+    {
+      "category": "채팅 시스템 구조",
+      "testName": "채널 타입 열거형",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.709Z"
+    },
+    {
+      "category": "채팅 시스템 구조",
+      "testName": "알림 설정 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.709Z"
+    },
+    {
+      "category": "채팅 시스템 구조",
+      "testName": "메시지 전송 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.709Z"
+    },
+    {
+      "category": "채팅 로직",
+      "testName": "메시지 필터링",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.715Z"
+    },
+    {
+      "category": "채팅 로직",
+      "testName": "메시지 검증",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.715Z"
+    },
+    {
+      "category": "채팅 로직",
+      "testName": "개인 메시지 전송",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.716Z"
+    },
+    {
+      "category": "채팅 로직",
+      "testName": "메시지 반응 추가",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.716Z"
+    },
+    {
+      "category": "채팅 로직",
+      "testName": "조용한 시간 확인",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.716Z"
+    },
+    {
+      "category": "채팅 로직",
+      "testName": "사용자 차단",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.716Z"
+    },
+    {
+      "category": "소셜 매니저 통합",
+      "testName": "모든 매니저 import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.721Z"
+    },
+    {
+      "category": "소셜 매니저 통합",
+      "testName": "매니저 인스턴스 변수",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.722Z"
+    },
+    {
+      "category": "소셜 매니저 통합",
+      "testName": "통합 초기화 로직",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.722Z"
+    },
+    {
+      "category": "소셜 매니저 통합",
+      "testName": "Getter 메서드들",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.722Z"
+    },
+    {
+      "category": "소셜 매니저 통합",
+      "testName": "통합 cleanup",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.722Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "SocialManager.ts - EventBus import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.728Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "SocialManager.ts - Event emission",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.728Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "SocialManager.ts - Event listening",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.728Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "SocialManager.ts - Event cleanup",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.728Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "FriendManager.ts - EventBus import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.735Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "FriendManager.ts - Event emission",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.735Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "FriendManager.ts - Event listening",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.735Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "FriendManager.ts - Event cleanup",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.735Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "GiftSystem.ts - EventBus import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.741Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "GiftSystem.ts - Event emission",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.741Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "GiftSystem.ts - Event listening",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.741Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "GiftSystem.ts - Event cleanup",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.741Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "GuildManager.ts - EventBus import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.748Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "GuildManager.ts - Event emission",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.748Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "GuildManager.ts - Event listening",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.748Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "GuildManager.ts - Event cleanup",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.748Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "LeaderboardManager.ts - EventBus import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.755Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "LeaderboardManager.ts - Event emission",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.755Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "LeaderboardManager.ts - Event listening",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.755Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "LeaderboardManager.ts - Event cleanup",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.755Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "ChatManager.ts - EventBus import",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.762Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "ChatManager.ts - Event emission",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.762Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "ChatManager.ts - Event listening",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.762Z"
+    },
+    {
+      "category": "이벤트 통합",
+      "testName": "ChatManager.ts - Event cleanup",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.762Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - 로컬 저장소 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.770Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - 데이터 로드 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.770Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - 데이터 저장 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.770Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - Map 자료구조 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.770Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - 에러 핸들링",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.770Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - 로컬 저장소 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.776Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - 데이터 로드 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.776Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - 데이터 저장 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.776Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - Map 자료구조 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.776Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - 에러 핸들링",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.776Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GuildManager.ts - 로컬 저장소 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.785Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GuildManager.ts - 데이터 로드 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.785Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GuildManager.ts - 데이터 저장 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.785Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GuildManager.ts - Map 자료구조 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.785Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GuildManager.ts - 에러 핸들링",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.785Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "LeaderboardManager.ts - 로컬 저장소 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.792Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "LeaderboardManager.ts - 데이터 로드 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.792Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "LeaderboardManager.ts - 데이터 저장 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.792Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "LeaderboardManager.ts - Map 자료구조 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.792Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "LeaderboardManager.ts - 에러 핸들링",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.792Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "ChatManager.ts - 로컬 저장소 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.798Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "ChatManager.ts - 데이터 로드 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.798Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "ChatManager.ts - 데이터 저장 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.798Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "ChatManager.ts - Map 자료구조 사용",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.798Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "ChatManager.ts - 에러 핸들링",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.798Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "SocialManager.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.803Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "SocialManager.ts - 초기화 상태 관리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.803Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "SocialManager.ts - TypeScript 데코레이터",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.803Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "SocialManager.ts - 의도/책임 주석",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.803Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "SocialManager.ts - cleanup 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.803Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "FriendManager.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.808Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "FriendManager.ts - 초기화 상태 관리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.808Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "FriendManager.ts - TypeScript 데코레이터",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.808Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "FriendManager.ts - 의도/책임 주석",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.808Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "FriendManager.ts - cleanup 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.808Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GiftSystem.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.814Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GiftSystem.ts - 초기화 상태 관리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.814Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GiftSystem.ts - TypeScript 데코레이터",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.814Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GiftSystem.ts - 의도/책임 주석",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.814Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GiftSystem.ts - cleanup 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.814Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GuildManager.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.820Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GuildManager.ts - 초기화 상태 관리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.820Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GuildManager.ts - TypeScript 데코레이터",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.820Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GuildManager.ts - 의도/책임 주석",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.820Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "GuildManager.ts - cleanup 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.820Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "LeaderboardManager.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.826Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "LeaderboardManager.ts - 초기화 상태 관리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.827Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "LeaderboardManager.ts - TypeScript 데코레이터",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.827Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "LeaderboardManager.ts - 의도/책임 주석",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.827Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "LeaderboardManager.ts - cleanup 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.827Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "ChatManager.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.832Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "ChatManager.ts - 초기화 상태 관리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.832Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "ChatManager.ts - TypeScript 데코레이터",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.832Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "ChatManager.ts - 의도/책임 주석",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.832Z"
+    },
+    {
+      "category": "아키텍처",
+      "testName": "ChatManager.ts - cleanup 메서드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:31:43.832Z"
+    }
+  ],
+  "status": "EXCELLENT"
+}

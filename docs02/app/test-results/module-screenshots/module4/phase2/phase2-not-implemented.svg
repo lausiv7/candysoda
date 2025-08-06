@@ -13,8 +13,8 @@
                 <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" fill="#6b7280">⚠️</text>
                 
                 <!-- 제목 -->
-                <text x="400" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#374151">진행 시스템</text>
-                <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">Core (레벨/진행)</text>
+                <text x="400" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#374151">소셜 시스템</text>
+                <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">Guild System</text>
                 
                 <!-- 상태 -->
                 <text x="400" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ef4444">미구현 상태</text>
@@ -25,6 +25,6 @@
                 <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">향후 개발 예정</text>
                 
                 <!-- 타임스탬프 -->
-                <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9ca3af">캡처: 2025. 8. 6. 오후 3:32:06</text>
+                <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9ca3af">캡처: 2025. 8. 6. 오후 3:16:39</text>
             </svg>
         

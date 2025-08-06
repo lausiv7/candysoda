@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-08-05T20:34:23.209Z",
-  "dateTime": "2025. 8. 6. 오전 5:34:23",
+  "timestamp": "2025-08-06T06:31:48.147Z",
+  "dateTime": "2025. 8. 6. 오후 3:31:48",
   "totalTests": 80,
   "executedTests": 80,
   "passedTests": 55,
@@ -14,7 +14,7 @@
       "error": "Test failed in 3",
       "screenshot": "artifacts/.playwright-artifacts-3/test-failed-1.png",
       "video": "artifacts/.playwright-artifacts-3/video.webm",
-      "timestamp": "2025-08-05T20:34:23.204Z"
+      "timestamp": "2025-08-06T06:31:48.143Z"
     },
     {
       "name": "Puz-0790d-스트-1-1-게임-페이지-로드-및-초기-상태-확인-chromium",
@@ -24,7 +24,7 @@
       "error": "Test failed in chromium",
       "screenshot": "artifacts/sweet-puzzle-e2e-Sweet-Puz-0790d-스트-1-1-게임-페이지-로드-및-초기-상태-확인-chromium/test-failed-1.png",
       "video": "artifacts/sweet-puzzle-e2e-Sweet-Puz-0790d-스트-1-1-게임-페이지-로드-및-초기-상태-확인-chromium/video.webm",
-      "timestamp": "2025-08-05T20:34:23.204Z"
+      "timestamp": "2025-08-06T06:31:48.143Z"
     },
     {
       "name": "Puz-980d5-본-상호작용-테스트-2-1-블록-선택-기능-테스트-chromium",
@@ -34,7 +34,7 @@
       "error": "Test failed in chromium",
       "screenshot": "artifacts/sweet-puzzle-e2e-Sweet-Puz-980d5-본-상호작용-테스트-2-1-블록-선택-기능-테스트-chromium/test-failed-1.png",
       "video": "artifacts/sweet-puzzle-e2e-Sweet-Puz-980d5-본-상호작용-테스트-2-1-블록-선택-기능-테스트-chromium/video.webm",
-      "timestamp": "2025-08-05T20:34:23.204Z"
+      "timestamp": "2025-08-06T06:31:48.143Z"
     },
     {
       "name": "Puz-adfd4--기본-상호작용-테스트-2-2-드래그-조작-테스트-chromium",
@@ -44,7 +44,7 @@
       "error": "Test failed in chromium",
       "screenshot": "artifacts/sweet-puzzle-e2e-Sweet-Puz-adfd4--기본-상호작용-테스트-2-2-드래그-조작-테스트-chromium/test-failed-1.png",
       "video": "artifacts/sweet-puzzle-e2e-Sweet-Puz-adfd4--기본-상호작용-테스트-2-2-드래그-조작-테스트-chromium/video.webm",
-      "timestamp": "2025-08-05T20:34:23.204Z"
+      "timestamp": "2025-08-06T06:31:48.143Z"
     },
     {
       "name": "Puz-d227e-기화-및-UI-테스트-1-2-반응형-디자인-테스트-chromium",
@@ -54,7 +54,7 @@
       "error": "Test failed in chromium",
       "screenshot": "artifacts/sweet-puzzle-e2e-Sweet-Puz-d227e-기화-및-UI-테스트-1-2-반응형-디자인-테스트-chromium/test-failed-1.png",
       "video": "artifacts/sweet-puzzle-e2e-Sweet-Puz-d227e-기화-및-UI-테스트-1-2-반응형-디자인-테스트-chromium/video.webm",
-      "timestamp": "2025-08-05T20:34:23.204Z"
+      "timestamp": "2025-08-06T06:31:48.143Z"
     }
   ],
   "screenshots": [],

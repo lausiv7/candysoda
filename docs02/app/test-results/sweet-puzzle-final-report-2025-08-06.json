@@ -1,0 +1,176 @@
+{
+  "timestamp": "2025-08-06T06:33:41.411Z",
+  "reportId": "2025-08-06",
+  "projectName": "Sweet Puzzle (캔디소다)",
+  "summary": {
+    "totalModules": 4,
+    "totalPhases": 16,
+    "implementedPhases": 7,
+    "totalTests": 508,
+    "totalPassed": null,
+    "totalFailed": null,
+    "overallSuccessRate": null,
+    "status": "NEEDS_IMPROVEMENT"
+  },
+  "modules": [
+    {
+      "id": "module1",
+      "name": "퍼즐 시스템",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Core (기본 퍼즐)",
+          "implemented": true,
+          "testFile": "run-sweet-puzzle-tests.js"
+        },
+        {
+          "id": "phase2",
+          "name": "Special Blocks",
+          "implemented": false
+        },
+        {
+          "id": "phase3",
+          "name": "AI Level Generation",
+          "implemented": false
+        },
+        {
+          "id": "phase4",
+          "name": "Board Management",
+          "implemented": false
+        }
+      ],
+      "implementedPhases": 1,
+      "implementationRate": 25,
+      "testResults": {
+        "totalTests": 127,
+        "successRate": 91,
+        "timestamp": "2025-08-06T06:31:43.608Z"
+      }
+    },
+    {
+      "id": "module2",
+      "name": "진행 시스템",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Core (레벨/진행)",
+          "implemented": true,
+          "testFile": "../cocos-project/test-progression-system.js"
+        },
+        {
+          "id": "phase2",
+          "name": "Reward System",
+          "implemented": false
+        },
+        {
+          "id": "phase3",
+          "name": "Economy System",
+          "implemented": false
+        },
+        {
+          "id": "phase4",
+          "name": "Mission System",
+          "implemented": false
+        }
+      ],
+      "implementedPhases": 1,
+      "implementationRate": 25,
+      "testResults": {
+        "totalTests": 127,
+        "successRate": 91,
+        "timestamp": "2025-08-06T06:31:43.608Z"
+      }
+    },
+    {
+      "id": "module3",
+      "name": "UI 시스템",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Core (기본 UI)",
+          "implemented": true,
+          "testFile": "../cocos-project/test-ui-system.js"
+        },
+        {
+          "id": "phase2",
+          "name": "Design System",
+          "implemented": false
+        },
+        {
+          "id": "phase3",
+          "name": "Responsive Layout",
+          "implemented": false
+        },
+        {
+          "id": "phase4",
+          "name": "Accessibility",
+          "implemented": false
+        }
+      ],
+      "implementedPhases": 1,
+      "implementationRate": 25,
+      "testResults": {
+        "totalTests": 127,
+        "successRate": 91,
+        "timestamp": "2025-08-06T06:31:43.608Z"
+      }
+    },
+    {
+      "id": "module4",
+      "name": "소셜 시스템",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Core (친구 시스템)",
+          "implemented": true,
+          "testFile": "../cocos-project/test-social-system-complete.js"
+        },
+        {
+          "id": "phase2",
+          "name": "Guild System (길드)",
+          "implemented": true,
+          "testFile": "../cocos-project/test-social-system-complete.js"
+        },
+        {
+          "id": "phase3",
+          "name": "Competition System (리더보드)",
+          "implemented": true,
+          "testFile": "../cocos-project/test-social-system-complete.js"
+        },
+        {
+          "id": "phase4",
+          "name": "Communication System (채팅)",
+          "implemented": true,
+          "testFile": "../cocos-project/test-social-system-complete.js"
+        }
+      ],
+      "implementedPhases": 4,
+      "implementationRate": 100,
+      "testResults": {
+        "totalTests": 127,
+        "passed": 115,
+        "failed": 12,
+        "successRate": 91,
+        "timestamp": "2025-08-06T06:31:43.608Z"
+      }
+    }
+  ],
+  "aggregatedResults": {
+    "puzzle": null,
+    "progression": null,
+    "ui": null,
+    "social": null
+  },
+  "recommendations": {
+    "readyForRelease": false,
+    "criticalIssues": false,
+    "nextSteps": [
+      "UI/UX 시스템 구현하여 완전한 게임 경험 제공",
+      "사용자 테스트 및 피드백 수집 시작"
+    ],
+    "priorities": [
+      "MEDIUM: Module 3 (UI 시스템) 구현",
+      "MEDIUM: 사용자 인터페이스 완성"
+    ]
+  }
+}

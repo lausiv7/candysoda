@@ -1,0 +1,173 @@
+{
+  "timestamp": "2025-08-06T06:28:01.422Z",
+  "modules": [
+    {
+      "id": "module1",
+      "name": "퍼즐 시스템",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Core (기본 퍼즐)",
+          "url": "file:///mnt/d/git/2025/shungshung/docs02/app/index.html",
+          "implemented": true,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module1/phase1/phase1-implementation.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:01.426Z"
+        },
+        {
+          "id": "phase2",
+          "name": "Special Blocks",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module1/phase2/phase2-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.687Z"
+        },
+        {
+          "id": "phase3",
+          "name": "AI Level Generation",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module1/phase3/phase3-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.711Z"
+        },
+        {
+          "id": "phase4",
+          "name": "Board Management",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module1/phase4/phase4-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.720Z"
+        }
+      ]
+    },
+    {
+      "id": "module2",
+      "name": "진행 시스템",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Core (레벨/진행)",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module2/phase1/phase1-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.729Z"
+        },
+        {
+          "id": "phase2",
+          "name": "Reward System",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module2/phase2/phase2-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.737Z"
+        },
+        {
+          "id": "phase3",
+          "name": "Economy System",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module2/phase3/phase3-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.745Z"
+        },
+        {
+          "id": "phase4",
+          "name": "Mission System",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module2/phase4/phase4-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.754Z"
+        }
+      ]
+    },
+    {
+      "id": "module3",
+      "name": "UI 시스템",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Core (기본 UI)",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module3/phase1/phase1-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.761Z"
+        },
+        {
+          "id": "phase2",
+          "name": "Design System",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module3/phase2/phase2-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.769Z"
+        },
+        {
+          "id": "phase3",
+          "name": "Responsive Layout",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module3/phase3/phase3-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.778Z"
+        },
+        {
+          "id": "phase4",
+          "name": "Accessibility",
+          "url": null,
+          "implemented": false,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module3/phase4/phase4-not-implemented.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.787Z"
+        }
+      ]
+    },
+    {
+      "id": "module4",
+      "name": "소셜 시스템",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Core (친구 시스템)",
+          "url": "file:///mnt/d/git/2025/shungshung/docs02/cocos-project/test-results/social-system-test-report.json",
+          "implemented": true,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module4/phase1/phase1-implementation.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:06.795Z"
+        },
+        {
+          "id": "phase2",
+          "name": "Guild System (길드)",
+          "url": "file:///mnt/d/git/2025/shungshung/docs02/cocos-project/test-results/complete-social-system-test-report.json",
+          "implemented": true,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module4/phase2/phase2-implementation.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:10.161Z"
+        },
+        {
+          "id": "phase3",
+          "name": "Competition System (리더보드)",
+          "url": "file:///mnt/d/git/2025/shungshung/docs02/cocos-project/test-results/complete-social-system-test-report.json",
+          "implemented": true,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module4/phase3/phase3-implementation.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:14.242Z"
+        },
+        {
+          "id": "phase4",
+          "name": "Communication System (채팅)",
+          "url": "file:///mnt/d/git/2025/shungshung/docs02/cocos-project/test-results/complete-social-system-test-report.json",
+          "implemented": true,
+          "screenshotPath": "/mnt/d/git/2025/shungshung/docs02/app/test-results/module-screenshots/module4/phase4/phase4-implementation.png",
+          "error": null,
+          "captureTime": "2025-08-06T06:28:18.477Z"
+        }
+      ]
+    }
+  ]
+}

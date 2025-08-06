@@ -1,0 +1,481 @@
+{
+  "timestamp": "2025-08-06T06:15:52.379Z",
+  "summary": {
+    "totalTests": 67,
+    "passedTests": 65,
+    "failedTests": 2,
+    "successRate": 97
+  },
+  "details": [
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/SocialManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.386Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/friends/FriendManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.388Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/social/friends/GiftSystem.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.391Z"
+    },
+    {
+      "category": "파일 존재 확인",
+      "testName": "assets/scripts/core/EventBus.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.393Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/SocialManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.399Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/friends/FriendManager.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.407Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/social/friends/GiftSystem.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.412Z"
+    },
+    {
+      "category": "TypeScript 문법",
+      "testName": "assets/scripts/core/EventBus.ts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.416Z"
+    },
+    {
+      "category": "클래스 선언",
+      "testName": "SocialManager",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.422Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "SocialManager.getInstance",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.422Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "SocialManager.initialize",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.422Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "SocialManager.getFriendManager",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.422Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "SocialManager.cleanup",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.422Z"
+    },
+    {
+      "category": "클래스 선언",
+      "testName": "FriendManager",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.429Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "FriendManager.getInstance",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.429Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "FriendManager.initialize",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.429Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "FriendManager.sendFriendRequest",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.429Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "FriendManager.acceptFriendRequest",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.429Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "FriendManager.getFriends",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.429Z"
+    },
+    {
+      "category": "클래스 선언",
+      "testName": "GiftSystem",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.437Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "GiftSystem.getInstance",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.437Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "GiftSystem.initialize",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.438Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "GiftSystem.sendGift",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.438Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "GiftSystem.claimGift",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.438Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "GiftSystem.getUnclaimedGifts",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.438Z"
+    },
+    {
+      "category": "클래스 선언",
+      "testName": "EventBus",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.442Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "EventBus.getInstance",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.442Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "EventBus.on",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.442Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "EventBus.off",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.442Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "EventBus.emit",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.442Z"
+    },
+    {
+      "category": "메서드 존재",
+      "testName": "EventBus.once",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.442Z"
+    },
+    {
+      "category": "의존성 import",
+      "testName": "assets/scripts/social/SocialManager.ts -> FriendManager",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.447Z"
+    },
+    {
+      "category": "의존성 import",
+      "testName": "assets/scripts/social/SocialManager.ts -> EventBus",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.447Z"
+    },
+    {
+      "category": "의존성 import",
+      "testName": "assets/scripts/social/friends/FriendManager.ts -> EventBus",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.455Z"
+    },
+    {
+      "category": "의존성 import",
+      "testName": "assets/scripts/social/friends/FriendManager.ts -> sys",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.455Z"
+    },
+    {
+      "category": "의존성 import",
+      "testName": "assets/scripts/social/friends/GiftSystem.ts -> EventBus",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.461Z"
+    },
+    {
+      "category": "의존성 import",
+      "testName": "assets/scripts/social/friends/GiftSystem.ts -> Gift",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.461Z"
+    },
+    {
+      "category": "의존성 import",
+      "testName": "assets/scripts/social/friends/GiftSystem.ts -> GiftType",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.461Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "SocialManager.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.466Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "SocialManager.ts - 이벤트 발생 코드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.466Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "SocialManager.ts - 데이터 저장 메커니즘",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.466Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "SocialManager.ts - 에러 처리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.466Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.473Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - 이벤트 발생 코드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.473Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - 데이터 저장 메커니즘",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.473Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "FriendManager.ts - 에러 처리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.473Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - 싱글톤 패턴 구현",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.479Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - 이벤트 발생 코드",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.479Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - 데이터 저장 메커니즘",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.479Z"
+    },
+    {
+      "category": "데이터 플로우",
+      "testName": "GiftSystem.ts - 에러 처리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.479Z"
+    },
+    {
+      "category": "이벤트 시스템",
+      "testName": "이벤트 등록 (on)",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.485Z"
+    },
+    {
+      "category": "이벤트 시스템",
+      "testName": "일회성 이벤트 (once)",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.485Z"
+    },
+    {
+      "category": "이벤트 시스템",
+      "testName": "이벤트 해제 (off)",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.485Z"
+    },
+    {
+      "category": "이벤트 시스템",
+      "testName": "이벤트 발생 (emit)",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.485Z"
+    },
+    {
+      "category": "이벤트 시스템",
+      "testName": "이벤트 핸들러 Map 구조",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.485Z"
+    },
+    {
+      "category": "친구 시스템",
+      "testName": "친구 관계 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.493Z"
+    },
+    {
+      "category": "친구 시스템",
+      "testName": "친구 요청 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.493Z"
+    },
+    {
+      "category": "친구 시스템",
+      "testName": "친구 상태 열거형",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.493Z"
+    },
+    {
+      "category": "친구 시스템",
+      "testName": "친구 요청 검증 로직",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.493Z"
+    },
+    {
+      "category": "친구 시스템",
+      "testName": "친구 데이터 저장",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.493Z"
+    },
+    {
+      "category": "친구 시스템",
+      "testName": "만료된 요청 정리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.493Z"
+    },
+    {
+      "category": "선물 시스템",
+      "testName": "선물 정의 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.501Z"
+    },
+    {
+      "category": "선물 시스템",
+      "testName": "선물 타입 열거형",
+      "passed": false,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.501Z"
+    },
+    {
+      "category": "선물 시스템",
+      "testName": "선물 통계 인터페이스",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.501Z"
+    },
+    {
+      "category": "선물 시스템",
+      "testName": "일일 제한 검사",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.501Z"
+    },
+    {
+      "category": "선물 시스템",
+      "testName": "쿨다운 관리",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.501Z"
+    },
+    {
+      "category": "선물 시스템",
+      "testName": "일일 리셋 로직",
+      "passed": true,
+      "error": null,
+      "timestamp": "2025-08-06T06:15:52.501Z"
+    }
+  ],
+  "status": "EXCELLENT"
+}
