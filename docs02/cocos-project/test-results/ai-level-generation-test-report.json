@@ -1,0 +1,571 @@
+{
+  "timestamp": "2025-08-08T23:32:41.112Z",
+  "testSuite": "Module 1 Phase 3: AI Level Generation System",
+  "summary": {
+    "totalTests": 85,
+    "passed": 84,
+    "failed": 1,
+    "successRate": 99
+  },
+  "categories": {
+    "fileStructure": {
+      "tests": [
+        {
+          "name": "AILevelGenerator.ts 존재 확인",
+          "passed": true,
+          "message": "파일이 존재합니다",
+          "timestamp": "2025-08-08T23:32:41.120Z"
+        },
+        {
+          "name": "AdaptiveDifficultySystem.ts 존재 확인",
+          "passed": true,
+          "message": "파일이 존재합니다",
+          "timestamp": "2025-08-08T23:32:41.122Z"
+        }
+      ],
+      "passed": 2,
+      "failed": 0
+    },
+    "typeScriptSyntax": {
+      "tests": [
+        {
+          "name": "AILevelGenerator.ts 문법 검증",
+          "passed": true,
+          "message": "TypeScript 구문이 올바릅니다",
+          "timestamp": "2025-08-08T23:32:41.128Z"
+        },
+        {
+          "name": "AdaptiveDifficultySystem.ts 문법 검증",
+          "passed": false,
+          "message": "TypeScript 구문에 문제가 있습니다",
+          "timestamp": "2025-08-08T23:32:41.135Z"
+        }
+      ],
+      "passed": 1,
+      "failed": 1
+    },
+    "levelGenerator": {
+      "tests": [
+        {
+          "name": "AILevelGenerator 정의 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "LevelConfig 정의 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "GenerationParameters 정의 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "ObjectiveType 정의 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "DifficultyLevel 정의 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "LevelObjective 정의 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "generateLevel 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "calculateOptimalDifficulty 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "adjustLevelDifficulty 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "generateLevelSeries 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "buildGenerationPrompt 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "simulateAIGeneration AI 기능 확인",
+          "passed": true,
+          "message": "AI 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "parseLevelFromAI AI 기능 확인",
+          "passed": true,
+          "message": "AI 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "AIPrompt AI 기능 확인",
+          "passed": true,
+          "message": "AI 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        },
+        {
+          "name": "ValidationResult AI 기능 확인",
+          "passed": true,
+          "message": "AI 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.139Z"
+        }
+      ],
+      "passed": 15,
+      "failed": 0
+    },
+    "adaptiveDifficulty": {
+      "tests": [
+        {
+          "name": "PlayerPerformanceData 인터페이스 확인",
+          "passed": true,
+          "message": "인터페이스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "AdaptationSettings 인터페이스 확인",
+          "passed": true,
+          "message": "인터페이스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "DifficultyAdjustmentResult 인터페이스 확인",
+          "passed": true,
+          "message": "인터페이스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "PlayerProfile 인터페이스 확인",
+          "passed": true,
+          "message": "인터페이스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "PerformanceAnalysis 인터페이스 확인",
+          "passed": true,
+          "message": "인터페이스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "updatePlayerPerformance 적응형 메서드 확인",
+          "passed": true,
+          "message": "적응형 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "calculateDifficultyAdjustment 적응형 메서드 확인",
+          "passed": true,
+          "message": "적응형 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "analyzePlayerPerformance 적응형 메서드 확인",
+          "passed": true,
+          "message": "적응형 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "predictiveDifficultyAdjustment 적응형 메서드 확인",
+          "passed": true,
+          "message": "적응형 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "processSatisfactionFeedback 적응형 메서드 확인",
+          "passed": true,
+          "message": "적응형 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        },
+        {
+          "name": "AdaptiveDifficultySystem 싱글톤 패턴 확인",
+          "passed": true,
+          "message": "싱글톤 패턴이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.143Z"
+        }
+      ],
+      "passed": 11,
+      "failed": 0
+    },
+    "levelValidation": {
+      "tests": [
+        {
+          "name": "LevelValidator 검증 컴포넌트 확인",
+          "passed": true,
+          "message": "검증 컴포넌트가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "ValidationResult 검증 컴포넌트 확인",
+          "passed": true,
+          "message": "검증 컴포넌트가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "validateLevel 검증 컴포넌트 확인",
+          "passed": true,
+          "message": "검증 컴포넌트가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "calculateSolvabilityScore 검증 컴포넌트 확인",
+          "passed": true,
+          "message": "검증 컴포넌트가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "calculateBalanceScore 검증 컴포넌트 확인",
+          "passed": true,
+          "message": "검증 컴포넌트가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "calculateDifficultyScore 검증 컴포넌트 확인",
+          "passed": true,
+          "message": "검증 컴포넌트가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "calculateFunScore 검증 컴포넌트 확인",
+          "passed": true,
+          "message": "검증 컴포넌트가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "solvability 검증 기준 확인",
+          "passed": true,
+          "message": "검증 기준이 설정되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "balance 검증 기준 확인",
+          "passed": true,
+          "message": "검증 기준이 설정되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "difficulty 검증 기준 확인",
+          "passed": true,
+          "message": "검증 기준이 설정되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        },
+        {
+          "name": "funFactor 검증 기준 확인",
+          "passed": true,
+          "message": "검증 기준이 설정되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.148Z"
+        }
+      ],
+      "passed": 11,
+      "failed": 0
+    },
+    "playerAnalysis": {
+      "tests": [
+        {
+          "name": "calculatePerformanceTrend 분석 메서드 확인",
+          "passed": true,
+          "message": "분석 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "calculateSkillProgression 분석 메서드 확인",
+          "passed": true,
+          "message": "분석 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "calculateEngagementLevel 분석 메서드 확인",
+          "passed": true,
+          "message": "분석 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "calculateFrustrationLevel 분석 메서드 확인",
+          "passed": true,
+          "message": "분석 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "estimateOptimalDifficulty 분석 메서드 확인",
+          "passed": true,
+          "message": "분석 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "recommendObjectiveTypes 분석 메서드 확인",
+          "passed": true,
+          "message": "분석 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "analyzePlayerStrengthsWeaknesses 분석 메서드 확인",
+          "passed": true,
+          "message": "분석 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "generatePerformanceInsights 분석 메서드 확인",
+          "passed": true,
+          "message": "분석 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "playerProfiles 데이터 관리 확인",
+          "passed": true,
+          "message": "데이터 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "performanceBuffer 데이터 관리 확인",
+          "passed": true,
+          "message": "데이터 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "getOrCreatePlayerProfile 데이터 관리 확인",
+          "passed": true,
+          "message": "데이터 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "savePlayerProfile 데이터 관리 확인",
+          "passed": true,
+          "message": "데이터 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "loadPlayerProfiles 데이터 관리 확인",
+          "passed": true,
+          "message": "데이터 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "predictNextLevelPerformance 예측 기능 확인",
+          "passed": true,
+          "message": "예측 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "predictiveDifficultyAdjustment 예측 기능 확인",
+          "passed": true,
+          "message": "예측 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        },
+        {
+          "name": "generatePreAdjustedLevel 예측 기능 확인",
+          "passed": true,
+          "message": "예측 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.154Z"
+        }
+      ],
+      "passed": 16,
+      "failed": 0
+    },
+    "aiIntegration": {
+      "tests": [
+        {
+          "name": "AIGenerationParams AI 통합 기능 확인",
+          "passed": true,
+          "message": "AI 통합 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "enableAIGeneration AI 통합 기능 확인",
+          "passed": true,
+          "message": "AI 통합 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "fallbackToTemplates AI 통합 기능 확인",
+          "passed": true,
+          "message": "AI 통합 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "maxGenerationAttempts AI 통합 기능 확인",
+          "passed": true,
+          "message": "AI 통합 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "simulateAIGeneration AI 통합 기능 확인",
+          "passed": true,
+          "message": "AI 통합 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "parseLevelFromAI AI 통합 기능 확인",
+          "passed": true,
+          "message": "AI 통합 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "LevelTemplate 템플릿 시스템 확인",
+          "passed": true,
+          "message": "템플릿 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "templateLibrary 템플릿 시스템 확인",
+          "passed": true,
+          "message": "템플릿 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "loadTemplateLibrary 템플릿 시스템 확인",
+          "passed": true,
+          "message": "템플릿 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "findBestTemplate 템플릿 시스템 확인",
+          "passed": true,
+          "message": "템플릿 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "customizeTemplate 템플릿 시스템 확인",
+          "passed": true,
+          "message": "템플릿 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "generateFromTemplate 템플릿 시스템 확인",
+          "passed": true,
+          "message": "템플릿 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "buildGenerationPrompt 프롬프트 시스템 확인",
+          "passed": true,
+          "message": "프롬프트 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "AIPrompt 프롬프트 시스템 확인",
+          "passed": true,
+          "message": "프롬프트 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        },
+        {
+          "name": "addFeedback 프롬프트 시스템 확인",
+          "passed": true,
+          "message": "프롬프트 시스템이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.160Z"
+        }
+      ],
+      "passed": 15,
+      "failed": 0
+    },
+    "performanceOptimization": {
+      "tests": [
+        {
+          "name": "delay 최적화 기능 확인",
+          "passed": true,
+          "message": "최적화 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "maxGenerationAttempts 최적화 기능 확인",
+          "passed": true,
+          "message": "최적화 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "adaptationCooldown 최적화 기능 확인",
+          "passed": true,
+          "message": "최적화 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "performanceBuffer 최적화 기능 확인",
+          "passed": true,
+          "message": "최적화 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "buffer.length > 50 최적화 기능 확인",
+          "passed": true,
+          "message": "최적화 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "Map 메모리 관리 확인",
+          "passed": true,
+          "message": "메모리 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "slice 메모리 관리 확인",
+          "passed": true,
+          "message": "메모리 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "shift 메모리 관리 확인",
+          "passed": true,
+          "message": "메모리 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "Math.max(0, Math.min( 메모리 관리 확인",
+          "passed": true,
+          "message": "메모리 관리 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "try { 에러 처리 확인",
+          "passed": true,
+          "message": "에러 처리가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "catch (error) 에러 처리 확인",
+          "passed": true,
+          "message": "에러 처리가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "console.error 에러 처리 확인",
+          "passed": true,
+          "message": "에러 처리가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        },
+        {
+          "name": "console.warn 에러 처리 확인",
+          "passed": true,
+          "message": "에러 처리가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:32:41.171Z"
+        }
+      ],
+      "passed": 13,
+      "failed": 0
+    }
+  },
+  "errors": []
+}

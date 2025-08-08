@@ -1,0 +1,391 @@
+{
+  "timestamp": "2025-08-08T11:07:02.936Z",
+  "testSuite": "Module 1 Phase 2: Special Blocks System",
+  "summary": {
+    "totalTests": 55,
+    "passed": 54,
+    "failed": 1,
+    "successRate": 98
+  },
+  "categories": {
+    "fileStructure": {
+      "tests": [
+        {
+          "name": "SpecialBlock.ts 존재 확인",
+          "passed": true,
+          "message": "파일이 존재합니다",
+          "timestamp": "2025-08-08T11:07:02.943Z"
+        },
+        {
+          "name": "SpecialBlockManager.ts 존재 확인",
+          "passed": true,
+          "message": "파일이 존재합니다",
+          "timestamp": "2025-08-08T11:07:02.945Z"
+        },
+        {
+          "name": "BlockType.ts 존재 확인",
+          "passed": true,
+          "message": "파일이 존재합니다",
+          "timestamp": "2025-08-08T11:07:02.947Z"
+        }
+      ],
+      "passed": 3,
+      "failed": 0
+    },
+    "typeScriptSyntax": {
+      "tests": [
+        {
+          "name": "SpecialBlock.ts 문법 검증",
+          "passed": true,
+          "message": "TypeScript 구문이 올바릅니다",
+          "timestamp": "2025-08-08T11:07:02.952Z"
+        },
+        {
+          "name": "SpecialBlockManager.ts 문법 검증",
+          "passed": true,
+          "message": "TypeScript 구문이 올바릅니다",
+          "timestamp": "2025-08-08T11:07:02.957Z"
+        },
+        {
+          "name": "BlockType.ts 문법 검증",
+          "passed": false,
+          "message": "TypeScript 구문에 문제가 있습니다",
+          "timestamp": "2025-08-08T11:07:02.961Z"
+        }
+      ],
+      "passed": 2,
+      "failed": 1
+    },
+    "specialBlockTypes": {
+      "tests": [
+        {
+          "name": "LINE_HORIZONTAL 타입 정의 확인",
+          "passed": true,
+          "message": "타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.964Z"
+        },
+        {
+          "name": "LINE_VERTICAL 타입 정의 확인",
+          "passed": true,
+          "message": "타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.964Z"
+        },
+        {
+          "name": "BOMB 타입 정의 확인",
+          "passed": true,
+          "message": "타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.964Z"
+        },
+        {
+          "name": "RAINBOW 타입 정의 확인",
+          "passed": true,
+          "message": "타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.964Z"
+        },
+        {
+          "name": "OBSTACLE 타입 정의 확인",
+          "passed": true,
+          "message": "타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.964Z"
+        },
+        {
+          "name": "BlockTypeHelper.isSpecialBlock 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.964Z"
+        },
+        {
+          "name": "BlockTypeHelper.getSpecialBlockTypeFromMatch 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.964Z"
+        },
+        {
+          "name": "BlockTypeHelper.getSpecialBlockFromShapeMatch 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.964Z"
+        }
+      ],
+      "passed": 8,
+      "failed": 0
+    },
+    "blockCreation": {
+      "tests": [
+        {
+          "name": "SpecialBlock 클래스 정의 확인",
+          "passed": true,
+          "message": "클래스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        },
+        {
+          "name": "LineBlock 클래스 정의 확인",
+          "passed": true,
+          "message": "클래스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        },
+        {
+          "name": "BombBlock 클래스 정의 확인",
+          "passed": true,
+          "message": "클래스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        },
+        {
+          "name": "RainbowBlock 클래스 정의 확인",
+          "passed": true,
+          "message": "클래스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        },
+        {
+          "name": "activate 메서드 구현 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        },
+        {
+          "name": "getPreviewEffect 메서드 구현 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        },
+        {
+          "name": "canActivate 메서드 구현 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        },
+        {
+          "name": "init 메서드 구현 확인",
+          "passed": true,
+          "message": "메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        },
+        {
+          "name": "ActivationResult 클래스 확인",
+          "passed": true,
+          "message": "ActivationResult 클래스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.969Z"
+        }
+      ],
+      "passed": 9,
+      "failed": 0
+    },
+    "activation": {
+      "tests": [
+        {
+          "name": "SINGLE_CLICK 패턴 정의 확인",
+          "passed": true,
+          "message": "활성화 패턴이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.972Z"
+        },
+        {
+          "name": "SWAP_ACTIVATION 패턴 정의 확인",
+          "passed": true,
+          "message": "활성화 패턴이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        },
+        {
+          "name": "AUTO_ACTIVATION 패턴 정의 확인",
+          "passed": true,
+          "message": "활성화 패턴이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        },
+        {
+          "name": "LINE_CLEAR 효과 정의 확인",
+          "passed": true,
+          "message": "효과 타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        },
+        {
+          "name": "EXPLOSION 효과 정의 확인",
+          "passed": true,
+          "message": "효과 타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        },
+        {
+          "name": "COLOR_CLEAR 효과 정의 확인",
+          "passed": true,
+          "message": "효과 타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        },
+        {
+          "name": "CROSS_EXPLOSION 효과 정의 확인",
+          "passed": true,
+          "message": "효과 타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        },
+        {
+          "name": "MEGA_EXPLOSION 효과 정의 확인",
+          "passed": true,
+          "message": "효과 타입이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        },
+        {
+          "name": "HORIZONTAL 방향 정의 확인",
+          "passed": true,
+          "message": "방향이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        },
+        {
+          "name": "VERTICAL 방향 정의 확인",
+          "passed": true,
+          "message": "방향이 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.973Z"
+        }
+      ],
+      "passed": 10,
+      "failed": 0
+    },
+    "combination": {
+      "tests": [
+        {
+          "name": "SpecialBlockCombinator 클래스 확인",
+          "passed": true,
+          "message": "SpecialBlockCombinator 클래스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.977Z"
+        },
+        {
+          "name": "calculateCombination 메서드 확인",
+          "passed": true,
+          "message": "조합 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.977Z"
+        },
+        {
+          "name": "createCrossExplosion 메서드 확인",
+          "passed": true,
+          "message": "조합 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.977Z"
+        },
+        {
+          "name": "createMegaExplosion 메서드 확인",
+          "passed": true,
+          "message": "조합 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.977Z"
+        },
+        {
+          "name": "createRainbowLineCombo 메서드 확인",
+          "passed": true,
+          "message": "조합 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.977Z"
+        },
+        {
+          "name": "CombinationEffect 클래스 확인",
+          "passed": true,
+          "message": "CombinationEffect 클래스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.977Z"
+        }
+      ],
+      "passed": 6,
+      "failed": 0
+    },
+    "preview": {
+      "tests": [
+        {
+          "name": "getSpecialBlockPreview 메서드 확인",
+          "passed": true,
+          "message": "미리보기 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.981Z"
+        },
+        {
+          "name": "getPreviewByType 메서드 확인",
+          "passed": true,
+          "message": "미리보기 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.981Z"
+        },
+        {
+          "name": "getLinePreview 메서드 확인",
+          "passed": true,
+          "message": "미리보기 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.981Z"
+        },
+        {
+          "name": "getBombPreview 메서드 확인",
+          "passed": true,
+          "message": "미리보기 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.981Z"
+        },
+        {
+          "name": "getRainbowPreview 메서드 확인",
+          "passed": true,
+          "message": "미리보기 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.981Z"
+        },
+        {
+          "name": "enableSpecialBlockPreview 설정 확인",
+          "passed": true,
+          "message": "미리보기 설정이 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.981Z"
+        }
+      ],
+      "passed": 6,
+      "failed": 0
+    },
+    "manager": {
+      "tests": [
+        {
+          "name": "SpecialBlockManager 클래스 확인",
+          "passed": true,
+          "message": "SpecialBlockManager 클래스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "싱글톤 패턴 구현 확인",
+          "passed": true,
+          "message": "싱글톤 패턴이 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "shouldCreateSpecialBlock 메서드 확인",
+          "passed": true,
+          "message": "관리 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "createSpecialBlock 메서드 확인",
+          "passed": true,
+          "message": "관리 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "activateSpecialBlock 메서드 확인",
+          "passed": true,
+          "message": "관리 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "activateSpecialBlockCombination 메서드 확인",
+          "passed": true,
+          "message": "관리 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "cleanupSpecialBlocks 메서드 확인",
+          "passed": true,
+          "message": "관리 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "getSpecialBlockStats 메서드 확인",
+          "passed": true,
+          "message": "관리 메서드가 구현되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "SpecialBlockCreation 인터페이스 확인",
+          "passed": true,
+          "message": "인터페이스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        },
+        {
+          "name": "SpecialBlockActivationEvent 인터페이스 확인",
+          "passed": true,
+          "message": "인터페이스가 정의되어 있습니다",
+          "timestamp": "2025-08-08T11:07:02.986Z"
+        }
+      ],
+      "passed": 10,
+      "failed": 0
+    }
+  },
+  "errors": []
+}

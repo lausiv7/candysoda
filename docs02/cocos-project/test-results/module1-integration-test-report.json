@@ -1,0 +1,469 @@
+{
+  "timestamp": "2025-08-08T23:40:43.499Z",
+  "testSuite": "Module 1: Puzzle System - Complete Integration Test",
+  "summary": {
+    "totalTests": 67,
+    "passed": 62,
+    "failed": 5,
+    "successRate": 93
+  },
+  "phases": {
+    "phase1": {
+      "name": "기본 퍼즐 시스템",
+      "tests": [
+        {
+          "name": "Phase1: Block.ts 핵심 파일 존재 확인",
+          "passed": true,
+          "message": "핵심 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.506Z"
+        },
+        {
+          "name": "Phase1: BlockType.ts 핵심 파일 존재 확인",
+          "passed": true,
+          "message": "핵심 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.507Z"
+        },
+        {
+          "name": "Phase1: GameBoard.ts 핵심 파일 존재 확인",
+          "passed": true,
+          "message": "핵심 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.509Z"
+        },
+        {
+          "name": "Phase1: MatchDetector.ts 핵심 파일 존재 확인",
+          "passed": true,
+          "message": "핵심 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.512Z"
+        },
+        {
+          "name": "Phase1: 블록 타입 헬퍼 기능 확인",
+          "passed": true,
+          "message": "블록 타입 헬퍼 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.516Z"
+        },
+        {
+          "name": "Phase1: 매치 감지 기능 확인",
+          "passed": true,
+          "message": "매치 감지 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.521Z"
+        },
+        {
+          "name": "Phase1: 게임 보드 기능 확인",
+          "passed": true,
+          "message": "게임 보드 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.526Z"
+        }
+      ],
+      "passed": 7,
+      "failed": 0
+    },
+    "phase2": {
+      "name": "특수 블록 시스템",
+      "tests": [
+        {
+          "name": "Phase2: SpecialBlock.ts 특수 블록 파일 존재 확인",
+          "passed": true,
+          "message": "특수 블록 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.528Z"
+        },
+        {
+          "name": "Phase2: SpecialBlockManager.ts 특수 블록 파일 존재 확인",
+          "passed": true,
+          "message": "특수 블록 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.530Z"
+        },
+        {
+          "name": "Phase2: LineBlock 클래스 확인",
+          "passed": true,
+          "message": "LineBlock 클래스가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.534Z"
+        },
+        {
+          "name": "Phase2: BombBlock 클래스 확인",
+          "passed": true,
+          "message": "BombBlock 클래스가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.534Z"
+        },
+        {
+          "name": "Phase2: RainbowBlock 클래스 확인",
+          "passed": true,
+          "message": "RainbowBlock 클래스가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.534Z"
+        },
+        {
+          "name": "Phase2: SpecialBlockCombinator 클래스 확인",
+          "passed": true,
+          "message": "SpecialBlockCombinator 클래스가 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.534Z"
+        },
+        {
+          "name": "Phase2: LINE_HORIZONTAL 타입 통합 확인",
+          "passed": true,
+          "message": "LINE_HORIZONTAL 타입이 통합되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.538Z"
+        },
+        {
+          "name": "Phase2: LINE_VERTICAL 타입 통합 확인",
+          "passed": true,
+          "message": "LINE_VERTICAL 타입이 통합되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.538Z"
+        },
+        {
+          "name": "Phase2: BOMB 타입 통합 확인",
+          "passed": true,
+          "message": "BOMB 타입이 통합되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.538Z"
+        },
+        {
+          "name": "Phase2: RAINBOW 타입 통합 확인",
+          "passed": true,
+          "message": "RAINBOW 타입이 통합되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.538Z"
+        }
+      ],
+      "passed": 10,
+      "failed": 0
+    },
+    "phase3": {
+      "name": "AI 레벨 생성",
+      "tests": [
+        {
+          "name": "Phase3: AILevelGenerator.ts AI 파일 존재 확인",
+          "passed": true,
+          "message": "AI 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.540Z"
+        },
+        {
+          "name": "Phase3: AdaptiveDifficultySystem.ts AI 파일 존재 확인",
+          "passed": true,
+          "message": "AI 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.543Z"
+        },
+        {
+          "name": "Phase3: generateLevel AI 기능 확인",
+          "passed": true,
+          "message": "generateLevel AI 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.548Z"
+        },
+        {
+          "name": "Phase3: calculateOptimalDifficulty AI 기능 확인",
+          "passed": true,
+          "message": "calculateOptimalDifficulty AI 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.548Z"
+        },
+        {
+          "name": "Phase3: LevelConfig AI 기능 확인",
+          "passed": true,
+          "message": "LevelConfig AI 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.548Z"
+        },
+        {
+          "name": "Phase3: ValidationResult AI 기능 확인",
+          "passed": true,
+          "message": "ValidationResult AI 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.548Z"
+        },
+        {
+          "name": "Phase3: updatePlayerPerformance 적응형 기능 확인",
+          "passed": true,
+          "message": "updatePlayerPerformance 적응형 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.553Z"
+        },
+        {
+          "name": "Phase3: calculateDifficultyAdjustment 적응형 기능 확인",
+          "passed": true,
+          "message": "calculateDifficultyAdjustment 적응형 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.553Z"
+        },
+        {
+          "name": "Phase3: PlayerProfile 적응형 기능 확인",
+          "passed": true,
+          "message": "PlayerProfile 적응형 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.553Z"
+        },
+        {
+          "name": "Phase3: PerformanceAnalysis 적응형 기능 확인",
+          "passed": true,
+          "message": "PerformanceAnalysis 적응형 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.553Z"
+        }
+      ],
+      "passed": 10,
+      "failed": 0
+    },
+    "phase4": {
+      "name": "보드 관리",
+      "tests": [
+        {
+          "name": "Phase4: BoardManager.ts 보드 관리 파일 존재 확인",
+          "passed": true,
+          "message": "보드 관리 파일이 존재합니다",
+          "timestamp": "2025-08-08T23:40:43.556Z"
+        },
+        {
+          "name": "Phase4: generateBoard 보드 기능 확인",
+          "passed": true,
+          "message": "generateBoard 보드 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        },
+        {
+          "name": "Phase4: checkAndResolveDeadlock 보드 기능 확인",
+          "passed": true,
+          "message": "checkAndResolveDeadlock 보드 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        },
+        {
+          "name": "Phase4: getHint 보드 기능 확인",
+          "passed": true,
+          "message": "getHint 보드 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        },
+        {
+          "name": "Phase4: shuffleBoard 보드 기능 확인",
+          "passed": true,
+          "message": "shuffleBoard 보드 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        },
+        {
+          "name": "Phase4: analyzeBoard 보드 기능 확인",
+          "passed": true,
+          "message": "analyzeBoard 보드 기능이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        },
+        {
+          "name": "Phase4: checkerboard 패턴 확인",
+          "passed": true,
+          "message": "checkerboard 패턴이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        },
+        {
+          "name": "Phase4: spiral 패턴 확인",
+          "passed": true,
+          "message": "spiral 패턴이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        },
+        {
+          "name": "Phase4: diamond 패턴 확인",
+          "passed": true,
+          "message": "diamond 패턴이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        },
+        {
+          "name": "Phase4: cross 패턴 확인",
+          "passed": true,
+          "message": "cross 패턴이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.559Z"
+        }
+      ],
+      "passed": 10,
+      "failed": 0
+    }
+  },
+  "integration": {
+    "crossPhaseCompatibility": {
+      "tests": [
+        {
+          "name": "CrossPhase: BlockType 인터페이스 호환성 확인",
+          "passed": true,
+          "message": "BlockType 인터페이스가 호환됩니다",
+          "timestamp": "2025-08-08T23:40:43.574Z"
+        },
+        {
+          "name": "CrossPhase: Block 인터페이스 호환성 확인",
+          "passed": true,
+          "message": "Block 인터페이스가 호환됩니다",
+          "timestamp": "2025-08-08T23:40:43.587Z"
+        },
+        {
+          "name": "CrossPhase: Vec2 인터페이스 호환성 확인",
+          "passed": true,
+          "message": "Vec2 인터페이스가 호환됩니다",
+          "timestamp": "2025-08-08T23:40:43.596Z"
+        },
+        {
+          "name": "CrossPhase: 특수 블록-보드 관리 통합 확인",
+          "passed": true,
+          "message": "특수 블록과 보드 관리가 통합되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.606Z"
+        },
+        {
+          "name": "CrossPhase: AI 생성-보드 관리 통합 확인",
+          "passed": true,
+          "message": "AI 생성과 보드 관리가 통합되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.615Z"
+        }
+      ],
+      "passed": 5,
+      "failed": 0
+    },
+    "systemArchitecture": {
+      "tests": [
+        {
+          "name": "Architecture: SpecialBlockManager.ts 싱글톤 패턴 확인",
+          "passed": true,
+          "message": "SpecialBlockManager.ts이 싱글톤 패턴을 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.621Z"
+        },
+        {
+          "name": "Architecture: AILevelGenerator.ts 싱글톤 패턴 확인",
+          "passed": true,
+          "message": "AILevelGenerator.ts이 싱글톤 패턴을 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.625Z"
+        },
+        {
+          "name": "Architecture: AdaptiveDifficultySystem.ts 싱글톤 패턴 확인",
+          "passed": true,
+          "message": "AdaptiveDifficultySystem.ts이 싱글톤 패턴을 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.630Z"
+        },
+        {
+          "name": "Architecture: BoardManager.ts 싱글톤 패턴 확인",
+          "passed": true,
+          "message": "BoardManager.ts이 싱글톤 패턴을 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.635Z"
+        },
+        {
+          "name": "Architecture: SpecialBlockManager.ts 데코레이터 확인",
+          "passed": true,
+          "message": "SpecialBlockManager.ts이 Cocos Creator 데코레이터를 사용합니다",
+          "timestamp": "2025-08-08T23:40:43.640Z"
+        },
+        {
+          "name": "Architecture: AILevelGenerator.ts 데코레이터 확인",
+          "passed": true,
+          "message": "AILevelGenerator.ts이 Cocos Creator 데코레이터를 사용합니다",
+          "timestamp": "2025-08-08T23:40:43.645Z"
+        },
+        {
+          "name": "Architecture: AdaptiveDifficultySystem.ts 데코레이터 확인",
+          "passed": true,
+          "message": "AdaptiveDifficultySystem.ts이 Cocos Creator 데코레이터를 사용합니다",
+          "timestamp": "2025-08-08T23:40:43.650Z"
+        },
+        {
+          "name": "Architecture: BoardManager.ts 데코레이터 확인",
+          "passed": true,
+          "message": "BoardManager.ts이 Cocos Creator 데코레이터를 사용합니다",
+          "timestamp": "2025-08-08T23:40:43.655Z"
+        },
+        {
+          "name": "Architecture: AILevelGenerator.ts 에러 처리 확인",
+          "passed": true,
+          "message": "AILevelGenerator.ts이 일관된 에러 처리를 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.660Z"
+        },
+        {
+          "name": "Architecture: AdaptiveDifficultySystem.ts 에러 처리 확인",
+          "passed": false,
+          "message": "AdaptiveDifficultySystem.ts이 일관된 에러 처리를 구현하지 않습니다",
+          "timestamp": "2025-08-08T23:40:43.665Z"
+        },
+        {
+          "name": "Architecture: BoardManager.ts 에러 처리 확인",
+          "passed": true,
+          "message": "BoardManager.ts이 일관된 에러 처리를 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.670Z"
+        }
+      ],
+      "passed": 10,
+      "failed": 1
+    },
+    "performanceIntegration": {
+      "tests": [
+        {
+          "name": "Performance: 배열 복사 최적화 확인",
+          "passed": true,
+          "message": "배열 복사 최적화이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.675Z"
+        },
+        {
+          "name": "Performance: 버퍼 크기 제한 확인",
+          "passed": true,
+          "message": "버퍼 크기 제한이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.680Z"
+        },
+        {
+          "name": "Performance: 시도 횟수 제한 확인",
+          "passed": false,
+          "message": "시도 횟수 제한이 구현되어 있지 않습니다",
+          "timestamp": "2025-08-08T23:40:43.685Z"
+        },
+        {
+          "name": "Performance: 리소스 정리 확인",
+          "passed": true,
+          "message": "리소스 정리이 구현되어 있습니다",
+          "timestamp": "2025-08-08T23:40:43.689Z"
+        },
+        {
+          "name": "Performance: AILevelGenerator.ts 비동기 처리 확인",
+          "passed": true,
+          "message": "AILevelGenerator.ts이 비동기 처리를 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.694Z"
+        },
+        {
+          "name": "Performance: AdaptiveDifficultySystem.ts 비동기 처리 확인",
+          "passed": false,
+          "message": "AdaptiveDifficultySystem.ts이 비동기 처리를 구현하지 않습니다",
+          "timestamp": "2025-08-08T23:40:43.698Z"
+        }
+      ],
+      "passed": 4,
+      "failed": 2
+    },
+    "dataFlowIntegration": {
+      "tests": [
+        {
+          "name": "DataFlow: BlockType 타입 일관성 확인",
+          "passed": true,
+          "message": "BlockType 타입이 일관되게 사용됩니다",
+          "timestamp": "2025-08-08T23:40:43.720Z"
+        },
+        {
+          "name": "DataFlow: Vec2 타입 일관성 확인",
+          "passed": true,
+          "message": "Vec2 타입이 일관되게 사용됩니다",
+          "timestamp": "2025-08-08T23:40:43.741Z"
+        },
+        {
+          "name": "DataFlow: LevelConfig 타입 일관성 확인",
+          "passed": false,
+          "message": "LevelConfig 타입 사용이 제한적입니다",
+          "timestamp": "2025-08-08T23:40:43.762Z"
+        },
+        {
+          "name": "DataFlow: Block 타입 일관성 확인",
+          "passed": true,
+          "message": "Block 타입이 일관되게 사용됩니다",
+          "timestamp": "2025-08-08T23:40:43.783Z"
+        },
+        {
+          "name": "DataFlow: SpecialBlockManager.ts 이벤트 처리 확인",
+          "passed": true,
+          "message": "SpecialBlockManager.ts이 이벤트 기반 통신을 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.787Z"
+        },
+        {
+          "name": "DataFlow: AdaptiveDifficultySystem.ts 이벤트 처리 확인",
+          "passed": false,
+          "message": "AdaptiveDifficultySystem.ts이 이벤트 기반 통신을 구현하지 않습니다",
+          "timestamp": "2025-08-08T23:40:43.791Z"
+        },
+        {
+          "name": "DataFlow: AILevelGenerator.ts 데이터 검증 확인",
+          "passed": true,
+          "message": "AILevelGenerator.ts이 데이터 검증을 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.796Z"
+        },
+        {
+          "name": "DataFlow: BoardManager.ts 데이터 검증 확인",
+          "passed": true,
+          "message": "BoardManager.ts이 데이터 검증을 구현합니다",
+          "timestamp": "2025-08-08T23:40:43.800Z"
+        }
+      ],
+      "passed": 6,
+      "failed": 2
+    }
+  },
+  "errors": []
+}
