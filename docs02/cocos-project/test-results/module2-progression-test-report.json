@@ -1,0 +1,601 @@
+{
+  "timestamp": "2025-08-08T23:51:10.555Z",
+  "testSuite": "Module 2: Progression System Complete",
+  "summary": {
+    "totalTests": 90,
+    "passed": 90,
+    "failed": 0,
+    "successRate": 100
+  },
+  "categories": {
+    "fileStructure": {
+      "tests": [
+        {
+          "name": "ProgressionManager.ts 존재 확인",
+          "passed": true,
+          "message": "파일 크기: 22561 bytes",
+          "timestamp": "2025-08-08T23:51:10.564Z"
+        },
+        {
+          "name": "LevelManager.ts 존재 확인",
+          "passed": true,
+          "message": "파일 크기: 19349 bytes",
+          "timestamp": "2025-08-08T23:51:10.567Z"
+        },
+        {
+          "name": "WorldManager.ts 존재 확인",
+          "passed": true,
+          "message": "파일 크기: 19136 bytes",
+          "timestamp": "2025-08-08T23:51:10.571Z"
+        },
+        {
+          "name": "PlayerProgressTracker.ts 존재 확인",
+          "passed": true,
+          "message": "파일 크기: 20939 bytes",
+          "timestamp": "2025-08-08T23:51:10.575Z"
+        },
+        {
+          "name": "RewardSystem.ts 존재 확인",
+          "passed": true,
+          "message": "파일 크기: 25698 bytes",
+          "timestamp": "2025-08-08T23:51:10.578Z"
+        },
+        {
+          "name": "CurrencyManager.ts 존재 확인",
+          "passed": true,
+          "message": "파일 크기: 17331 bytes",
+          "timestamp": "2025-08-08T23:51:10.581Z"
+        },
+        {
+          "name": "EventManager.ts 존재 확인",
+          "passed": true,
+          "message": "파일 크기: 28337 bytes",
+          "timestamp": "2025-08-08T23:51:10.585Z"
+        }
+      ],
+      "passed": 7,
+      "failed": 0
+    },
+    "typeScriptSyntax": {
+      "tests": [
+        {
+          "name": "RewardSystem.ts 문법 검증",
+          "passed": true,
+          "message": "TypeScript 구문이 올바름",
+          "timestamp": "2025-08-08T23:51:10.591Z"
+        },
+        {
+          "name": "CurrencyManager.ts 문법 검증",
+          "passed": true,
+          "message": "TypeScript 구문이 올바름",
+          "timestamp": "2025-08-08T23:51:10.595Z"
+        },
+        {
+          "name": "EventManager.ts 문법 검증",
+          "passed": true,
+          "message": "TypeScript 구문이 올바름",
+          "timestamp": "2025-08-08T23:51:10.601Z"
+        }
+      ],
+      "passed": 3,
+      "failed": 0
+    },
+    "rewardSystem": {
+      "tests": [
+        {
+          "name": "RewardSystem 컴포넌트 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "DailyMission 컴포넌트 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "Achievement 컴포넌트 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "SeasonProgress 컴포넌트 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "MissionTemplate 컴포넌트 확인",
+          "passed": true,
+          "message": "컴포넌트가 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "generateDailyMissions 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "updateMissionProgress 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "checkAchievements 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "awardSeasonXP 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "awardReward 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "RewardType.COINS 보상 타입 확인",
+          "passed": true,
+          "message": "보상 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "RewardType.GEMS 보상 타입 확인",
+          "passed": true,
+          "message": "보상 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "RewardType.BOOSTERS 보상 타입 확인",
+          "passed": true,
+          "message": "보상 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "RewardType.SPECIAL_ITEM 보상 타입 확인",
+          "passed": true,
+          "message": "보상 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "PLAY_LEVELS 미션 타입 확인",
+          "passed": true,
+          "message": "미션 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "COLLECT_STARS 미션 타입 확인",
+          "passed": true,
+          "message": "미션 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "MATCH_COLORS 미션 타입 확인",
+          "passed": true,
+          "message": "미션 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "CREATE_SPECIALS 미션 타입 확인",
+          "passed": true,
+          "message": "미션 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        },
+        {
+          "name": "RewardSystem 싱글톤 패턴 확인",
+          "passed": true,
+          "message": "싱글톤 패턴이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.606Z"
+        }
+      ],
+      "passed": 19,
+      "failed": 0
+    },
+    "currencyManager": {
+      "tests": [
+        {
+          "name": "CurrencyType.COINS 화폐 타입 확인",
+          "passed": true,
+          "message": "화폐 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "CurrencyType.GEMS 화폐 타입 확인",
+          "passed": true,
+          "message": "화폐 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "CurrencyType.HEARTS 화폐 타입 확인",
+          "passed": true,
+          "message": "화폐 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "CurrencyType.ENERGY 화폐 타입 확인",
+          "passed": true,
+          "message": "화폐 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "CurrencyType.TOKENS 화폐 타입 확인",
+          "passed": true,
+          "message": "화폐 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "addCurrency 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "spendCurrency 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "getBalance 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "canAfford 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "consumeHeart 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.609Z"
+        },
+        {
+          "name": "refillHearts 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        },
+        {
+          "name": "heartRecoveryTimeMs 하트 시스템 기능 확인",
+          "passed": true,
+          "message": "하트 시스템 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        },
+        {
+          "name": "startHeartRecoverySystem 하트 시스템 기능 확인",
+          "passed": true,
+          "message": "하트 시스템 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        },
+        {
+          "name": "HeartSystemState 하트 시스템 기능 확인",
+          "passed": true,
+          "message": "하트 시스템 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        },
+        {
+          "name": "RefillMethod 하트 시스템 기능 확인",
+          "passed": true,
+          "message": "하트 시스템 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        },
+        {
+          "name": "Transaction 경제 시스템 확인",
+          "passed": true,
+          "message": "경제 시스템이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        },
+        {
+          "name": "EconomyMetrics 경제 시스템 확인",
+          "passed": true,
+          "message": "경제 시스템이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        },
+        {
+          "name": "transactionHistory 경제 시스템 확인",
+          "passed": true,
+          "message": "경제 시스템이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        },
+        {
+          "name": "updateEconomyMetrics 경제 시스템 확인",
+          "passed": true,
+          "message": "경제 시스템이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.610Z"
+        }
+      ],
+      "passed": 19,
+      "failed": 0
+    },
+    "eventManager": {
+      "tests": [
+        {
+          "name": "EventType.COLLECTION 이벤트 타입 확인",
+          "passed": true,
+          "message": "이벤트 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "EventType.TOURNAMENT 이벤트 타입 확인",
+          "passed": true,
+          "message": "이벤트 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "EventType.WEEKEND_CHALLENGE 이벤트 타입 확인",
+          "passed": true,
+          "message": "이벤트 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "EventType.SEASONAL_FESTIVAL 이벤트 타입 확인",
+          "passed": true,
+          "message": "이벤트 타입이 정의됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "CollectionEvent 클래스 확인",
+          "passed": true,
+          "message": "이벤트 클래스가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "TournamentEvent 클래스 확인",
+          "passed": true,
+          "message": "이벤트 클래스가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "WeekendChallengeEvent 클래스 확인",
+          "passed": true,
+          "message": "이벤트 클래스가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "SeasonalFestivalEvent 클래스 확인",
+          "passed": true,
+          "message": "이벤트 클래스가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "WeeklyChallenge 주간 챌린지 확인",
+          "passed": true,
+          "message": "주간 챌린지 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "ChallengeStage 주간 챌린지 확인",
+          "passed": true,
+          "message": "주간 챌린지 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "initializeWeeklyChallenge 주간 챌린지 확인",
+          "passed": true,
+          "message": "주간 챌린지 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "updateWeeklyChallengeProgress 주간 챌린지 확인",
+          "passed": true,
+          "message": "주간 챌린지 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "startEvent 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "updateEventProgress 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "scheduleEvents 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        },
+        {
+          "name": "checkEventSchedule 메서드 확인",
+          "passed": true,
+          "message": "메서드가 구현됨",
+          "timestamp": "2025-08-08T23:51:10.613Z"
+        }
+      ],
+      "passed": 16,
+      "failed": 0
+    },
+    "systemIntegration": {
+      "tests": [
+        {
+          "name": "RewardSystem → CurrencyManager 참조",
+          "passed": true,
+          "message": "보상 시스템이 화폐 매니저를 참조함",
+          "timestamp": "2025-08-08T23:51:10.623Z"
+        },
+        {
+          "name": "EventManager → RewardSystem 참조",
+          "passed": true,
+          "message": "이벤트 매니저가 보상 시스템을 참조함",
+          "timestamp": "2025-08-08T23:51:10.623Z"
+        },
+        {
+          "name": "EventBus 통합",
+          "passed": true,
+          "message": "모든 시스템이 이벤트 버스를 사용함",
+          "timestamp": "2025-08-08T23:51:10.623Z"
+        },
+        {
+          "name": "싱글톤 패턴 일관성",
+          "passed": true,
+          "message": "모든 매니저가 싱글톤 패턴을 사용함",
+          "timestamp": "2025-08-08T23:51:10.623Z"
+        },
+        {
+          "name": "Reward 인터페이스 호환성",
+          "passed": true,
+          "message": "보상 인터페이스가 여러 시스템에서 호환됨",
+          "timestamp": "2025-08-08T23:51:10.623Z"
+        },
+        {
+          "name": "CurrencyType 열거형 일관성",
+          "passed": true,
+          "message": "화폐 타입이 일관되게 사용됨",
+          "timestamp": "2025-08-08T23:51:10.623Z"
+        },
+        {
+          "name": "EventBus 이벤트 일관성",
+          "passed": true,
+          "message": "이벤트 이름이 일관되게 정의됨",
+          "timestamp": "2025-08-08T23:51:10.623Z"
+        }
+      ],
+      "passed": 7,
+      "failed": 0
+    },
+    "progressionFlow": {
+      "tests": [
+        {
+          "name": "ProgressionManager 존재 확인",
+          "passed": true,
+          "message": "ProgressionManager가 존재함",
+          "timestamp": "2025-08-08T23:51:10.626Z"
+        },
+        {
+          "name": "LevelManager 존재 확인",
+          "passed": true,
+          "message": "LevelManager가 존재함",
+          "timestamp": "2025-08-08T23:51:10.626Z"
+        },
+        {
+          "name": "WorldInfo 월드 시스템 확인",
+          "passed": true,
+          "message": "월드 시스템 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        },
+        {
+          "name": "WorldTheme 월드 시스템 확인",
+          "passed": true,
+          "message": "월드 시스템 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        },
+        {
+          "name": "initializeWorlds 월드 시스템 확인",
+          "passed": true,
+          "message": "월드 시스템 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        },
+        {
+          "name": "isWorldUnlocked 월드 시스템 확인",
+          "passed": true,
+          "message": "월드 시스템 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        },
+        {
+          "name": "PlayerProgress 진행 추적 확인",
+          "passed": true,
+          "message": "진행 추적 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        },
+        {
+          "name": "updatePlayerProgress 진행 추적 확인",
+          "passed": true,
+          "message": "진행 추적 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        },
+        {
+          "name": "checkForNewUnlocks 진행 추적 확인",
+          "passed": true,
+          "message": "진행 추적 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        },
+        {
+          "name": "startLevel 진행 추적 확인",
+          "passed": true,
+          "message": "진행 추적 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        },
+        {
+          "name": "completeLevel 진행 추적 확인",
+          "passed": true,
+          "message": "진행 추적 기능이 구현됨",
+          "timestamp": "2025-08-08T23:51:10.630Z"
+        }
+      ],
+      "passed": 11,
+      "failed": 0
+    },
+    "economyBalance": {
+      "tests": [
+        {
+          "name": "화폐 최대 한도 설정",
+          "passed": true,
+          "message": "각 화폐별 최대 보유 한도가 설정됨",
+          "timestamp": "2025-08-08T23:51:10.637Z"
+        },
+        {
+          "name": "하트 회복 시간 제한",
+          "passed": true,
+          "message": "하트 회복에 시간 제약이 있음",
+          "timestamp": "2025-08-08T23:51:10.637Z"
+        },
+        {
+          "name": "경제 지표 추적",
+          "passed": true,
+          "message": "경제 상황을 모니터링함",
+          "timestamp": "2025-08-08T23:51:10.637Z"
+        },
+        {
+          "name": "거래 내역 기록",
+          "passed": true,
+          "message": "모든 화폐 거래가 기록됨",
+          "timestamp": "2025-08-08T23:51:10.637Z"
+        },
+        {
+          "name": "난이도별 보상 차등화",
+          "passed": true,
+          "message": "난이도에 따른 보상이 차등화됨",
+          "timestamp": "2025-08-08T23:51:10.637Z"
+        },
+        {
+          "name": "플레이어 레벨 기반 조정",
+          "passed": true,
+          "message": "플레이어 레벨에 따라 목표가 조정됨",
+          "timestamp": "2025-08-08T23:51:10.637Z"
+        },
+        {
+          "name": "시즌 경험치 밸런싱",
+          "passed": true,
+          "message": "시즌 레벨업에 필요한 경험치가 균형있게 조정됨",
+          "timestamp": "2025-08-08T23:51:10.637Z"
+        },
+        {
+          "name": "보상 가중치 시스템",
+          "passed": true,
+          "message": "미션 선택에 가중치가 적용됨",
+          "timestamp": "2025-08-08T23:51:10.637Z"
+        }
+      ],
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "errors": []
+}
