@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Puzzle - Module 3: UI/UX System 테스트 결과</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 30px; text-align: center; }
+        .header h1 { margin: 0; color: #4A90E2; font-size: 2.5em; }
+        .header .subtitle { color: #666; font-size: 1.2em; margin-top: 10px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .summary-card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; }
+        .summary-card h3 { margin: 0 0 15px 0; font-size: 1.1em; color: #666; }
+        .summary-card .value { font-size: 2.5em; font-weight: bold; margin-bottom: 10px; }
+        .success { color: #27AE60; }
+        .warning { color: #F39C12; }
+        .error { color: #E74C3C; }
+        .categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .category { background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden; }
+        .category-header { padding: 20px; background: linear-gradient(135deg, #4A90E2, #357ABD); color: white; }
+        .category-header h3 { margin: 0; font-size: 1.3em; }
+        .category-stats { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+        .category-body { padding: 20px; }
+        .test-item { display: flex; align-items: center; padding: 10px; margin: 5px 0; border-radius: 8px; background: #f8f9fa; }
+        .test-item.passed { border-left: 4px solid #27AE60; }
+        .test-item.failed { border-left: 4px solid #E74C3C; background: #ffeaea; }
+        .test-status { margin-right: 10px; font-weight: bold; }
+        .progress-bar { width: 100%; height: 20px; background: #ecf0f1; border-radius: 10px; overflow: hidden; margin-top: 10px; }
+        .progress-fill { height: 100%; transition: width 0.3s ease; }
+        .timestamp { text-align: center; margin-top: 30px; color: rgba(255,255,255,0.8); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Sweet Puzzle - UI/UX System</h1>
+            <div class="subtitle">Module 3 완전한 통합 테스트 결과</div>
+        </div>
+        
+        <div class="summary">
+            <div class="summary-card">
+                <h3>총 테스트</h3>
+                <div class="value">70</div>
+            </div>
+            <div class="summary-card">
+                <h3>성공</h3>
+                <div class="value success">69</div>
+            </div>
+            <div class="summary-card">
+                <h3>실패</h3>
+                <div class="value error">1</div>
+            </div>
+            <div class="summary-card">
+                <h3>성공률</h3>
+                <div class="value success">99%</div>
+            </div>
+        </div>
+        
+        <div class="categories">
+            
+                <div class="category">
+                    <div class="category-header">
+                        <h3>DesignSystem</h3>
+                        <div class="category-stats">
+                            <span>10/10 통과</span>
+                            <span class="success">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill success" style="width: 100%; background-color: #27AE60;"></div>
+                        </div>
+                    </div>
+                    <div class="category-body">
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>DesignSystem 클래스 파일 존재</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>DesignSystem 클래스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ColorTheme enum 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>FontSize enum 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>SWEET_PUZZLE_COLORS 팔레트 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>getColor 메서드 구현</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>setTheme 메서드 구현</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>applyTypographyStyle 메서드 구현</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>색상 대비 계산 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>싱글톤 패턴 구현</span>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="category-header">
+                        <h3>ResponsiveLayout</h3>
+                        <div class="category-stats">
+                            <span>10/10 통과</span>
+                            <span class="success">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill success" style="width: 100%; background-color: #27AE60;"></div>
+                        </div>
+                    </div>
+                    <div class="category-body">
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ResponsiveLayout 클래스 파일 존재</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ResponsiveLayout 클래스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ScreenCategory enum 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ScreenConfig 인터페이스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>detectScreenConfig 메서드 구현</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>applyResponsiveLayout 메서드 구현</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>세이프 에리어 감지 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>레이아웃 어댑터 시스템</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>폰트 크기 자동 조정</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>터치 영역 크기 조정</span>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="category-header">
+                        <h3>Accessibility</h3>
+                        <div class="category-stats">
+                            <span>10/10 통과</span>
+                            <span class="success">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill success" style="width: 100%; background-color: #27AE60;"></div>
+                        </div>
+                    </div>
+                    <div class="category-body">
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>AccessibilityManager 클래스 파일 존재</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>AccessibilityManager 클래스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ColorBlindnessType enum 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>AccessibilitySettings 인터페이스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>음성 피드백 시스템</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>색맹 지원 필터</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>포커스 관리 시스템</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>접근성 정보 설정</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>시스템 접근성 설정 감지</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>접근성 검사 기능</span>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="category-header">
+                        <h3>ComponentLibrary</h3>
+                        <div class="category-stats">
+                            <span>10/10 통과</span>
+                            <span class="success">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill success" style="width: 100%; background-color: #27AE60;"></div>
+                        </div>
+                    </div>
+                    <div class="category-body">
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>UIComponentLibrary 클래스 파일 존재</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>UIComponentLibrary 클래스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ComponentType enum 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ComponentConfig 인터페이스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>버튼 생성 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>패널 생성 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>모달 생성 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>진행 바 생성 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>알림 생성 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>컴포넌트 프리팹 시스템</span>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="category-header">
+                        <h3>ThemeManager</h3>
+                        <div class="category-stats">
+                            <span>10/10 통과</span>
+                            <span class="success">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill success" style="width: 100%; background-color: #27AE60;"></div>
+                        </div>
+                    </div>
+                    <div class="category-body">
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ThemeManager 클래스 파일 존재</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ThemeManager 클래스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ThemeType enum 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>ThemeConfig 인터페이스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>테마 전환 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>내장 테마 생성</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>자동 테마 감지</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>계절별 테마 시스템</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>시간대별 테마 시스템</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>커스텀 테마 생성</span>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="category-header">
+                        <h3>AnimationManager</h3>
+                        <div class="category-stats">
+                            <span>10/10 통과</span>
+                            <span class="success">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill success" style="width: 100%; background-color: #27AE60;"></div>
+                        </div>
+                    </div>
+                    <div class="category-body">
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>AnimationManager 클래스 파일 존재</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>AnimationManager 클래스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>AnimationType enum 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>AnimationConfig 인터페이스 정의</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>기본 애니메이션 재생 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>프리셋 애니메이션 시스템</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>시퀀스 애니메이션 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>파티클 효과 시스템</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>애니메이션 제어 기능</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>성능 최적화 기능</span>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="category-header">
+                        <h3>SystemIntegration</h3>
+                        <div class="category-stats">
+                            <span>9/10 통과</span>
+                            <span class="success">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill success" style="width: 90%; background-color: #27AE60;"></div>
+                        </div>
+                    </div>
+                    <div class="category-body">
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>모든 UI 시스템 파일 존재</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>싱글톤 패턴 일관성</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>EventBus 통합</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>상호 참조 시스템</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>TypeScript 인터페이스 일관성</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>Cocos Creator 컴포넌트 패턴</span>
+                            </div>
+                        
+                            <div class="test-item failed">
+                                <span class="test-status">❌</span>
+                                <span>접근성 통합 지원</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>반응형 레이아웃 통합</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>테마 시스템 통합</span>
+                            </div>
+                        
+                            <div class="test-item passed">
+                                <span class="test-status">✅</span>
+                                <span>통합 이벤트 시스템</span>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+        </div>
+        
+        <div class="timestamp">
+            테스트 실행 시간: 2025. 8. 9. 오후 1:10:05
+        </div>
+    </div>
+</body>
+</html>

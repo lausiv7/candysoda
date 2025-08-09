@@ -1,0 +1,404 @@
+{
+  "moduleName": "Module 3: UI/UX System",
+  "testDate": "2025-08-09T04:10:05.334Z",
+  "summary": {
+    "total": 70,
+    "passed": 69,
+    "failed": 1,
+    "successRate": 99
+  },
+  "categories": {
+    "designSystem": {
+      "total": 10,
+      "passed": 10,
+      "tests": [
+        {
+          "name": "DesignSystem 클래스 파일 존재",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "DesignSystem 클래스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ColorTheme enum 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "FontSize enum 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "SWEET_PUZZLE_COLORS 팔레트 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "getColor 메서드 구현",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "setTheme 메서드 구현",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "applyTypographyStyle 메서드 구현",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "색상 대비 계산 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "싱글톤 패턴 구현",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        }
+      ]
+    },
+    "responsiveLayout": {
+      "total": 10,
+      "passed": 10,
+      "tests": [
+        {
+          "name": "ResponsiveLayout 클래스 파일 존재",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ResponsiveLayout 클래스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ScreenCategory enum 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ScreenConfig 인터페이스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "detectScreenConfig 메서드 구현",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "applyResponsiveLayout 메서드 구현",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "세이프 에리어 감지 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "레이아웃 어댑터 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "폰트 크기 자동 조정",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "터치 영역 크기 조정",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        }
+      ]
+    },
+    "accessibility": {
+      "total": 10,
+      "passed": 10,
+      "tests": [
+        {
+          "name": "AccessibilityManager 클래스 파일 존재",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "AccessibilityManager 클래스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ColorBlindnessType enum 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "AccessibilitySettings 인터페이스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "음성 피드백 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "색맹 지원 필터",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "포커스 관리 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "접근성 정보 설정",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "시스템 접근성 설정 감지",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "접근성 검사 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        }
+      ]
+    },
+    "componentLibrary": {
+      "total": 10,
+      "passed": 10,
+      "tests": [
+        {
+          "name": "UIComponentLibrary 클래스 파일 존재",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "UIComponentLibrary 클래스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ComponentType enum 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ComponentConfig 인터페이스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "버튼 생성 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "패널 생성 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "모달 생성 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "진행 바 생성 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "알림 생성 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "컴포넌트 프리팹 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        }
+      ]
+    },
+    "themeManager": {
+      "total": 10,
+      "passed": 10,
+      "tests": [
+        {
+          "name": "ThemeManager 클래스 파일 존재",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ThemeManager 클래스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ThemeType enum 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "ThemeConfig 인터페이스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "테마 전환 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "내장 테마 생성",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "자동 테마 감지",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "계절별 테마 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "시간대별 테마 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "커스텀 테마 생성",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        }
+      ]
+    },
+    "animationManager": {
+      "total": 10,
+      "passed": 10,
+      "tests": [
+        {
+          "name": "AnimationManager 클래스 파일 존재",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "AnimationManager 클래스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "AnimationType enum 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "AnimationConfig 인터페이스 정의",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "기본 애니메이션 재생 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "프리셋 애니메이션 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "시퀀스 애니메이션 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "파티클 효과 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "애니메이션 제어 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "성능 최적화 기능",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        }
+      ]
+    },
+    "systemIntegration": {
+      "total": 10,
+      "passed": 9,
+      "tests": [
+        {
+          "name": "모든 UI 시스템 파일 존재",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "싱글톤 패턴 일관성",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "EventBus 통합",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "상호 참조 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "TypeScript 인터페이스 일관성",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "Cocos Creator 컴포넌트 패턴",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "접근성 통합 지원",
+          "status": "FAILED",
+          "message": "Test returned false"
+        },
+        {
+          "name": "반응형 레이아웃 통합",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "테마 시스템 통합",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        },
+        {
+          "name": "통합 이벤트 시스템",
+          "status": "PASSED",
+          "message": "Test completed successfully"
+        }
+      ]
+    }
+  }
+}
