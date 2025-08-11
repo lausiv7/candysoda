@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 AI Pattern Bank 테스트 리포트</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .summary-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .test-section { background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .status-passed { color: #22c55e; font-weight: bold; }
+        .status-failed { color: #ef4444; font-weight: bold; }
+        .test-details { background: #f8fafc; padding: 10px; border-radius: 6px; margin-top: 10px; font-size: 0.9em; }
+        .category-header { color: #6366f1; font-size: 1.1em; font-weight: bold; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 AI Pattern Bank 테스트 리포트</h1>
+            <p><strong>실행 시간:</strong> 2025. 8. 11. 오전 7:14:07 | <strong>소요 시간:</strong> 29ms</p>
+            <p><strong>99-02 문서 기반:</strong> 학습 가능성 우선 패턴 뱅크 시스템 검증</p>
+        </div>
+
+        <div class="summary">
+            <div class="summary-card">
+                <h3>📊 전체 결과</h3>
+                <div class="status-passed">13/13 통과 (100%)</div>
+            </div>
+            <div class="summary-card">
+                <h3>🎯 성공률</h3>
+                <div class="status-passed">우수</div>
+                <div style="font-size: 0.9em; color: #666; margin-top: 5px;">목표: 80%+</div>
+            </div>
+            <div class="summary-card">
+                <h3>⚡ 실행 시간</h3>
+                <div class="status-passed">29ms</div>
+                <div style="font-size: 0.9em; color: #666; margin-top: 5px;">매우 빠름</div>
+            </div>
+        </div>
+
+        
+        <div class="test-section">
+            <div class="category-header">INITIALIZATION (6/6)</div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Pattern Count</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> 5</div>
+                        <div><strong>실제:</strong> 5</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Pattern Exists: line3_horizontal</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> Pattern object</div>
+                        <div><strong>실제:</strong> Found</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Pattern Exists: line3_vertical</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> Pattern object</div>
+                        <div><strong>실제:</strong> Found</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Pattern Exists: cluster4_square</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> Pattern object</div>
+                        <div><strong>실제:</strong> Found</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Pattern Exists: gravity_shift_diagonal</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> Pattern object</div>
+                        <div><strong>실제:</strong> Found</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Pattern Exists: teleport_maze</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> Pattern object</div>
+                        <div><strong>실제:</strong> Found</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+        
+        <div class="test-section">
+            <div class="category-header">PATTERN_SELECTION (2/2)</div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Easy Budget Selection</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> 1-2 easy patterns</div>
+                        <div><strong>실제:</strong> 2 patterns selected</div>
+                        <div><strong>세부사항:</strong> [
+  "line3_horizontal",
+  "line3_vertical"
+]</div>
+                        
+                    </div>
+                    
+                </div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>High Budget Selection</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> 2+ patterns within budget</div>
+                        <div><strong>실제:</strong> 4 patterns selected</div>
+                        <div><strong>세부사항:</strong> [
+  {
+    "id": "line3_horizontal",
+    "difficulty": 1.2
+  },
+  {
+    "id": "line3_vertical",
+    "difficulty": 1.2
+  },
+  {
+    "id": "cluster4_square",
+    "difficulty": 2.1
+  },
+  {
+    "id": "gravity_shift_diagonal",
+    "difficulty": 4.5
+  }
+]</div>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+        
+        <div class="test-section">
+            <div class="category-header">LEARNABILITY (2/2)</div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Beginner Learnability Filter</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> All patterns with learnability >= 0.7</div>
+                        <div><strong>실제:</strong> Min learnability: 0.8</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Expert Adaptability Access</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> Access to lower learnability patterns</div>
+                        <div><strong>실제:</strong> Can access patterns with learnability: 0.6</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+        
+        <div class="test-section">
+            <div class="category-header">COMBINATION_RULES (1/1)</div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Forbidden Tag Combination</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> Gravity and Teleport not selected together</div>
+                        <div><strong>실제:</strong> Gravity: true, Teleport: false</div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+        
+        <div class="test-section">
+            <div class="category-header">INDICES (2/2)</div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Tag Index - LINE patterns</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> 2+ LINE patterns</div>
+                        <div><strong>실제:</strong> 2 patterns found</div>
+                        <div><strong>세부사항:</strong> [
+  "line3_horizontal",
+  "line3_vertical"
+]</div>
+                        
+                    </div>
+                    
+                </div>
+            
+                <div style="margin-bottom: 10px; padding: 10px; border-left: 3px solid #22c55e;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Difficulty Index - EASY patterns</strong>
+                        <span class="status-passed">PASSED</span>
+                    </div>
+                    
+                    <div class="test-details">
+                        <div><strong>예상:</strong> 2+ EASY patterns</div>
+                        <div><strong>실제:</strong> 2 patterns found</div>
+                        <div><strong>세부사항:</strong> [
+  {
+    "id": "line3_horizontal",
+    "difficulty": 1.2
+  },
+  {
+    "id": "line3_vertical",
+    "difficulty": 1.2
+  }
+]</div>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+        
+
+        <div class="test-section">
+            <h3>🔍 99-02 문서 준수도 평가</h3>
+            <div class="test-details">
+                <div><strong>✅ 학습 가능성 우선 설계:</strong> 신규 플레이어는 learnability 0.7+ 패턴만 접근</div>
+                <div><strong>✅ 적응도 기반 조정:</strong> 플레이어 adaptabilityScore에 따른 동적 임계값</div>
+                <div><strong>✅ 조합 규칙 검증:</strong> forbiddenWithTags로 충돌 패턴 방지</div>
+                <div><strong>✅ 패턴 인덱싱:</strong> 태그별, 난이도별 효율적 검색 지원</div>
+                <div><strong>✅ 확장성:</strong> 새로운 패턴 추가 용이한 구조</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding: 20px; color: #666; font-size: 12px;">
+            <p>🤖 이 리포트는 99-02번 문서 기반 AI 패턴 생성 시스템 테스트로 생성되었습니다.</p>
+        </div>
+    </div>
+</body>
+</html>
